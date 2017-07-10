@@ -1,0 +1,48 @@
+<div class="row authCard">
+  <div class="col s4 offset-s4">
+    <div class="card">
+      <div class="card-image">
+        <img src="./img/start-img.jpg">
+        <span class="card-title">Book Chest</span>
+      </div>
+      <div class="card-content">
+        <div class="row">
+          <div class="input-field col s12">
+            <p>{{errorMsg}}</p>
+            <input [(ngModel)]="userData.email" id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input [(ngModel)]="userData.password" id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+        <div class="row" *ngIf="registerTab">
+          <div class="input-field col s12">
+            <input [(ngModel)]="duplicatePass" id="duplicate-pass" type="password" class="validate">
+            <label for="duplicate-pass">Confirm Password</label>
+          </div>
+        </div>
+        <div class="card-action">
+
+          <div class="row" *ngIf="!registerTab">
+            <a class="waves-effect waves-light btn col s4 offset-m1 brown darken-2" (click)="registerTab = true"><i class="material-icons left">perm_contact_calendar</i>SignUp</a>
+            <button class="btn waves-effect waves-light col s4 offset-m2 brown darken-2" (click)="authenticate()" type="submit" name="action">SignIn
+              <i class="material-icons left">input</i>
+            </button>
+          </div>
+
+          <div class="row" *ngIf="registerTab">
+            <a class="waves-effect waves-light btn col s4 brown darken-2" (click)="registerTab = false"><i class="material-icons left">replay</i>Back</a>
+            <button class="btn waves-effect waves-light col s4 offset-m4 brown darken-2" (click)="register()" type="submit" name="action">SignUp
+              <i class="material-icons left">done</i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
