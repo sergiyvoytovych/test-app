@@ -36,6 +36,9 @@ app.use(function (req, res, next) {
 
 
 app.use(express.static(path.resolve(__dirname, 'client/dist')));
+app.get('/*', function (req,res) {
+    res.redirect('/');
+});
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -68,6 +71,6 @@ secureRoutes.post('/postbook', dataController.postBook)
 
 
 
-app.listen(4200, function () {
+app.listen(3000, function () {
     console.log('server is up')
 })

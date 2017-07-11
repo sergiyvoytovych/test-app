@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="server node_modules" level="project" />
+    <orderEntry type="library" name="wetello node_modules" level="project" />
   </component>
 </module>

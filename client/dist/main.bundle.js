@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\n"
+module.exports = "<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
@@ -175,7 +175,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "\r\n.input-field input:focus + label {\r\n  color: #795548 !important;\r\n}\r\n\r\n.row .input-field input:focus {\r\n  border-bottom: 1px solid #795548 !important;\r\n  box-shadow: 0 1px 0 0 #795548 !important\r\n}\r\n\r\n.authCard {\r\n  margin-top: 100px;\r\n}\r\n", ""]);
+exports.push([module.i, "\r\n.input-field input:focus + label {\r\n  color: #795548 !important;\r\n}\r\n\r\n.row .input-field input:focus {\r\n  border-bottom: 1px solid #795548 !important;\r\n  box-shadow: 0 1px 0 0 #795548 !important\r\n}\r\n\r\n.authCard {\r\n  margin-top: 20px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -188,7 +188,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/authtentificate/authtentificate.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row authCard\">\n  <div class=\"col s4 offset-s4\">\n    <div class=\"card\">\n      <div class=\"card-image\">\n        <img src=\"./img/start-img.jpg\">\n        <span class=\"card-title\">Book Chest</span>\n      </div>\n      <div class=\"card-content\">\n        <div class=\"row\">\n          <div class=\"input-field col s12\">\n            <p>{{errorMsg}}</p>\n            <input [(ngModel)]=\"userData.email\" id=\"email\" type=\"email\" class=\"validate\">\n            <label for=\"email\">Email</label>\n          </div>\n        </div>\n          <div class=\"row\">\n            <div class=\"input-field col s12\">\n              <input [(ngModel)]=\"userData.password\" id=\"password\" type=\"password\" class=\"validate\">\n              <label for=\"password\">Password</label>\n            </div>\n          </div>\n        <div class=\"row\" *ngIf=\"registerTab\">\n          <div class=\"input-field col s12\">\n            <input [(ngModel)]=\"duplicatePass\" id=\"duplicate-pass\" type=\"password\" class=\"validate\">\n            <label for=\"duplicate-pass\">Confirm Password</label>\n          </div>\n        </div>\n        <div class=\"card-action\">\n\n          <div class=\"row\" *ngIf=\"!registerTab\">\n            <a class=\"waves-effect waves-light btn col s4 offset-m1 brown darken-2\" (click)=\"registerTab = true\"><i class=\"material-icons left\">perm_contact_calendar</i>SignUp</a>\n            <button class=\"btn waves-effect waves-light col s4 offset-m2 brown darken-2\" (click)=\"authenticate()\" type=\"submit\" name=\"action\">SignIn\n              <i class=\"material-icons left\">input</i>\n            </button>\n          </div>\n\n          <div class=\"row\" *ngIf=\"registerTab\">\n            <a class=\"waves-effect waves-light btn col s4 brown darken-2\" (click)=\"registerTab = false\"><i class=\"material-icons left\">replay</i>Back</a>\n            <button class=\"btn waves-effect waves-light col s4 offset-m4 brown darken-2\" (click)=\"register()\" type=\"submit\" name=\"action\">SignUp\n              <i class=\"material-icons left\">done</i>\n            </button>\n          </div>\n\n        </div>\n      </div>\n      </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"row authCard\">\r\n  <div class=\"col s4 offset-s4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image\">\r\n        <img src=\"./img/start-img.jpg\">\r\n        <span class=\"card-title\">Book Chest</span>\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <div class=\"row\">\r\n          <div class=\"input-field col s12\">\r\n            <p>{{errorMsg}}</p>\r\n            <input [(ngModel)]=\"userData.email\" id=\"email\" type=\"email\" class=\"validate\">\r\n            <label for=\"email\">Email</label>\r\n          </div>\r\n        </div>\r\n          <div class=\"row\">\r\n            <div class=\"input-field col s12\">\r\n              <input [(ngModel)]=\"userData.password\" id=\"password\" type=\"password\" class=\"validate\">\r\n              <label for=\"password\">Password</label>\r\n            </div>\r\n          </div>\r\n        <div class=\"row\" *ngIf=\"registerTab\">\r\n          <div class=\"input-field col s12\">\r\n            <input [(ngModel)]=\"duplicatePass\" id=\"duplicate-pass\" type=\"password\" class=\"validate\">\r\n            <label for=\"duplicate-pass\">Confirm Password</label>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-action\">\r\n\r\n          <div class=\"row\" *ngIf=\"!registerTab\">\r\n            <a class=\"waves-effect waves-light btn col s4 offset-m1 brown darken-2\" (click)=\"registerTab = true\"><i class=\"material-icons left\">perm_contact_calendar</i>SignUp</a>\r\n            <button class=\"btn waves-effect waves-light col s4 offset-m2 brown darken-2\" (click)=\"authenticate()\" type=\"submit\" name=\"action\">SignIn\r\n              <i class=\"material-icons left\">input</i>\r\n            </button>\r\n          </div>\r\n\r\n          <div class=\"row\" *ngIf=\"registerTab\">\r\n            <a class=\"waves-effect waves-light btn col s4 brown darken-2\" (click)=\"registerTab = false\"><i class=\"material-icons left\">replay</i>Back</a>\r\n            <button class=\"btn waves-effect waves-light col s4 offset-m4 brown darken-2\" (click)=\"register()\" type=\"submit\" name=\"action\">SignUp\r\n              <i class=\"material-icons left\">done</i>\r\n            </button>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n      </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -290,7 +290,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/mainpage/books-list/books-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  books-list works!\n</p>\n"
+module.exports = "<p>\r\n  books-list works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -351,7 +351,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/mainpage/mainpage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav>\n  <div class=\"nav-wrapper\">\n      <a href=\"#\" class=\"brand-logo\">BookChest</a>\n      <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\n        <li><a routerLink=\"bookslist\">Books</a></li>\n        <li><a href=\"\">Ipsum</a></li>\n        <li><a href=\"\">Lorem</a></li>\n        <li><a (click)=\"logout()\">Logout</a></li>\n      </ul>\n  </div>\n</nav>\n\n<router-outlet></router-outlet>\n"
+module.exports = "<nav>\r\n  <div class=\"nav-wrapper\">\r\n      <a href=\"#\" class=\"brand-logo\">BookChest</a>\r\n      <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\r\n        <li><a routerLink=\"bookslist\">Books</a></li>\r\n        <li><a href=\"\">Ipsum</a></li>\r\n        <li><a href=\"\">Lorem</a></li>\r\n        <li><a (click)=\"logout()\">Logout</a></li>\r\n      </ul>\r\n  </div>\r\n</nav>\r\n\r\n<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 

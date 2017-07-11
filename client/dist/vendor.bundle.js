@@ -453,7 +453,7 @@ MaterializeModule.decorators = [
                     __WEBPACK_IMPORTED_MODULE_2__materialize_directive__["a" /* MaterializeDirective */]
                 ],
                 imports: [
-                    __WEBPACK_IMPORTED_MODULE_1__angular_common__["c" /* CommonModule */]
+                    __WEBPACK_IMPORTED_MODULE_1__angular_common__["d" /* CommonModule */]
                 ],
                 exports: [
                     __WEBPACK_IMPORTED_MODULE_2__materialize_directive__["a" /* MaterializeDirective */]
@@ -5217,7 +5217,7 @@ module.exports = g;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* unused harmony export NgLocaleLocalization */
 /* unused harmony export NgLocalization */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return CommonModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return CommonModule; });
 /* unused harmony export NgClass */
 /* unused harmony export NgFor */
 /* unused harmony export NgForOf */
@@ -5232,6 +5232,7 @@ module.exports = g;
 /* unused harmony export NgSwitchDefault */
 /* unused harmony export NgTemplateOutlet */
 /* unused harmony export NgComponentOutlet */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DOCUMENT; });
 /* unused harmony export AsyncPipe */
 /* unused harmony export DatePipe */
 /* unused harmony export I18nPluralPipe */
@@ -5244,7 +5245,7 @@ module.exports = g;
 /* unused harmony export SlicePipe */
 /* unused harmony export UpperCasePipe */
 /* unused harmony export TitleCasePipe */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return PLATFORM_BROWSER_ID; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return PLATFORM_BROWSER_ID; });
 /* unused harmony export ɵPLATFORM_SERVER_ID */
 /* unused harmony export ɵPLATFORM_WORKER_APP_ID */
 /* unused harmony export ɵPLATFORM_WORKER_UI_ID */
@@ -5253,18 +5254,18 @@ module.exports = g;
 /* unused harmony export isPlatformWorkerApp */
 /* unused harmony export isPlatformWorkerUi */
 /* unused harmony export VERSION */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlatformLocation; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return LOCATION_INITIALIZED; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return LocationStrategy; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return APP_BASE_HREF; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return HashLocationStrategy; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return PathLocationStrategy; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Location; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return PlatformLocation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return LOCATION_INITIALIZED; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return LocationStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return APP_BASE_HREF; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return HashLocationStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return PathLocationStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Location; });
 /* unused harmony export ɵa */
 /* unused harmony export ɵb */
 
 /**
- * @license Angular v4.2.5
+ * @license Angular v4.2.6
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -5366,7 +5367,7 @@ var PlatformLocation = (function () {
  * \@whatItDoes indicates when a location is initialized
  * \@experimental
  */
-var LOCATION_INITIALIZED = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* InjectionToken */]('Location Initialized');
+var LOCATION_INITIALIZED = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* InjectionToken */]('Location Initialized');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -5471,7 +5472,7 @@ var LocationStrategy = (function () {
  *
  * \@stable
  */
-var APP_BASE_HREF = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* InjectionToken */]('appBaseHref');
+var APP_BASE_HREF = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* InjectionToken */]('appBaseHref');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -5798,7 +5799,7 @@ HashLocationStrategy.decorators = [
  */
 HashLocationStrategy.ctorParameters = function () { return [
     { type: PlatformLocation, },
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [APP_BASE_HREF,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [APP_BASE_HREF,] },] },
 ]; };
 /**
  * @license
@@ -5921,7 +5922,7 @@ PathLocationStrategy.decorators = [
  */
 PathLocationStrategy.ctorParameters = function () { return [
     { type: PlatformLocation, },
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [APP_BASE_HREF,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [APP_BASE_HREF,] },] },
 ]; };
 /**
  * @license
@@ -6022,7 +6023,7 @@ NgLocaleLocalization.decorators = [
  * @nocollapse
  */
 NgLocaleLocalization.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */],] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */],] },] },
 ]; };
 var Plural = {};
 Plural.Zero = 0;
@@ -7062,7 +7063,7 @@ function getTypeNameForDebugging(type) {
  * A common pattern is that we need to show a set of properties from the same object. If the
  * object is undefined, then we have to use the safe-traversal-operator `?.` to guard against
  * dereferencing a `null` value. This is especially the case when waiting on async data such as
- * when using the `async` pipe as shown in folowing example:
+ * when using the `async` pipe as shown in following example:
  *
  * ```
  * Hello {{ (userStream|async)?.last }}, {{ (userStream|async)?.first }}!
@@ -8323,7 +8324,7 @@ function nameCondition(prop, len) {
  * @return {?}
  */
 function combine(options) {
-    return ((Object)).assign.apply(((Object)), [{}].concat(options));
+    return options.reduce(function (merged, opt) { return (Object.assign({}, merged, opt)); }, {});
 }
 /**
  * @param {?} ret
@@ -8500,7 +8501,7 @@ DecimalPipe.decorators = [
  * @nocollapse
  */
 DecimalPipe.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */],] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */],] },] },
 ]; };
 /**
  * \@ngModule CommonModule
@@ -8546,7 +8547,7 @@ PercentPipe.decorators = [
  * @nocollapse
  */
 PercentPipe.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */],] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */],] },] },
 ]; };
 /**
  * \@ngModule CommonModule
@@ -8600,7 +8601,7 @@ CurrencyPipe.decorators = [
  * @nocollapse
  */
 CurrencyPipe.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */],] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */],] },] },
 ]; };
 /**
  * @param {?} text
@@ -8772,7 +8773,7 @@ DatePipe.decorators = [
  * @nocollapse
  */
 DatePipe.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */],] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */],] },] },
 ]; };
 /**
  * @param {?} obj
@@ -9114,6 +9115,22 @@ CommonModule.ctorParameters = function () { return []; };
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
+/**
+ * A DI Token representing the main rendering context. In a browser this is the DOM Document.
+ *
+ * Note: Document might not be available in the Application Context when Application and Rendering
+ * Contexts are not the same (e.g. when running the application into a Web Worker).
+ *
+ * \@stable
+ */
+var DOCUMENT = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* InjectionToken */]('DocumentToken');
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
 var PLATFORM_BROWSER_ID = 'browser';
 var PLATFORM_SERVER_ID = 'server';
 var PLATFORM_WORKER_APP_ID = 'browserWorkerApp';
@@ -9169,7 +9186,7 @@ function isPlatformWorkerUi(platformId) {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Version */]('4.2.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Version */]('4.2.6');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -9438,7 +9455,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Version */]
 /* unused harmony export removeSummaryDuplicates */
 
 /**
- * @license Angular v4.2.5
+ * @license Angular v4.2.6
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -9458,7 +9475,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Version */]
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Version */]('4.2.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Version */]('4.2.6');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -14351,7 +14368,7 @@ var _ParseAST = (function () {
             return '';
         }
         this.advance();
-        return n.toString();
+        return (n.toString());
     };
     /**
      * @return {?}
@@ -14363,7 +14380,7 @@ var _ParseAST = (function () {
             return '';
         }
         this.advance();
-        return n.toString();
+        return (n.toString());
     };
     /**
      * @return {?}
@@ -14401,7 +14418,7 @@ var _ParseAST = (function () {
                 this.error('Cannot have a pipe in an action expression');
             }
             do {
-                var /** @type {?} */ name = ((this.expectIdentifierOrKeyword()));
+                var /** @type {?} */ name = this.expectIdentifierOrKeyword();
                 var /** @type {?} */ args = [];
                 while (this.optionalCharacter($COLON)) {
                     args.push(this.parseExpression());
@@ -14700,8 +14717,9 @@ var _ParseAST = (function () {
         if (!this.optionalCharacter($RBRACE)) {
             this.rbracesExpected++;
             do {
-                var /** @type {?} */ key = ((this.expectIdentifierOrKeywordOrString()));
-                keys.push(key);
+                var /** @type {?} */ quoted = this.next.isString();
+                var /** @type {?} */ key = this.expectIdentifierOrKeywordOrString();
+                keys.push({ key: key, quoted: quoted });
                 this.expectCharacter($COLON);
                 values.push(this.parsePipe());
             } while (this.optionalCharacter($COMMA));
@@ -14718,7 +14736,7 @@ var _ParseAST = (function () {
     _ParseAST.prototype.parseAccessMemberOrMethodCall = function (receiver, isSafe) {
         if (isSafe === void 0) { isSafe = false; }
         var /** @type {?} */ start = receiver.span.start;
-        var /** @type {?} */ id = ((this.expectIdentifierOrKeyword()));
+        var /** @type {?} */ id = this.expectIdentifierOrKeyword();
         if (this.optionalCharacter($LPAREN)) {
             this.rparensExpected++;
             var /** @type {?} */ args = this.parseCallArguments();
@@ -16935,6 +16953,458 @@ function lastOnStack(stack, element) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
+/**
+ * @param {?} message
+ * @return {?}
+ */
+function digest(message) {
+    return message.id || sha1(serializeNodes(message.nodes).join('') + ("[" + message.meaning + "]"));
+}
+/**
+ * @param {?} message
+ * @return {?}
+ */
+function decimalDigest(message) {
+    if (message.id) {
+        return message.id;
+    }
+    var /** @type {?} */ visitor = new _SerializerIgnoreIcuExpVisitor();
+    var /** @type {?} */ parts = message.nodes.map(function (a) { return a.visit(visitor, null); });
+    return computeMsgId(parts.join(''), message.meaning);
+}
+/**
+ * Serialize the i18n ast to something xml-like in order to generate an UID.
+ *
+ * The visitor is also used in the i18n parser tests
+ *
+ * \@internal
+ */
+var _SerializerVisitor = (function () {
+    function _SerializerVisitor() {
+    }
+    /**
+     * @param {?} text
+     * @param {?} context
+     * @return {?}
+     */
+    _SerializerVisitor.prototype.visitText = function (text, context) { return text.value; };
+    /**
+     * @param {?} container
+     * @param {?} context
+     * @return {?}
+     */
+    _SerializerVisitor.prototype.visitContainer = function (container, context) {
+        var _this = this;
+        return "[" + container.children.map(function (child) { return child.visit(_this); }).join(', ') + "]";
+    };
+    /**
+     * @param {?} icu
+     * @param {?} context
+     * @return {?}
+     */
+    _SerializerVisitor.prototype.visitIcu = function (icu, context) {
+        var _this = this;
+        var /** @type {?} */ strCases = Object.keys(icu.cases).map(function (k) { return k + " {" + icu.cases[k].visit(_this) + "}"; });
+        return "{" + icu.expression + ", " + icu.type + ", " + strCases.join(', ') + "}";
+    };
+    /**
+     * @param {?} ph
+     * @param {?} context
+     * @return {?}
+     */
+    _SerializerVisitor.prototype.visitTagPlaceholder = function (ph, context) {
+        var _this = this;
+        return ph.isVoid ?
+            "<ph tag name=\"" + ph.startName + "\"/>" :
+            "<ph tag name=\"" + ph.startName + "\">" + ph.children.map(function (child) { return child.visit(_this); }).join(', ') + "</ph name=\"" + ph.closeName + "\">";
+    };
+    /**
+     * @param {?} ph
+     * @param {?} context
+     * @return {?}
+     */
+    _SerializerVisitor.prototype.visitPlaceholder = function (ph, context) {
+        return ph.value ? "<ph name=\"" + ph.name + "\">" + ph.value + "</ph>" : "<ph name=\"" + ph.name + "\"/>";
+    };
+    /**
+     * @param {?} ph
+     * @param {?=} context
+     * @return {?}
+     */
+    _SerializerVisitor.prototype.visitIcuPlaceholder = function (ph, context) {
+        return "<ph icu name=\"" + ph.name + "\">" + ph.value.visit(this) + "</ph>";
+    };
+    return _SerializerVisitor;
+}());
+var serializerVisitor = new _SerializerVisitor();
+/**
+ * @param {?} nodes
+ * @return {?}
+ */
+function serializeNodes(nodes) {
+    return nodes.map(function (a) { return a.visit(serializerVisitor, null); });
+}
+/**
+ * Serialize the i18n ast to something xml-like in order to generate an UID.
+ *
+ * Ignore the ICU expressions so that message IDs stays identical if only the expression changes.
+ *
+ * \@internal
+ */
+var _SerializerIgnoreIcuExpVisitor = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](_SerializerIgnoreIcuExpVisitor, _super);
+    function _SerializerIgnoreIcuExpVisitor() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    /**
+     * @param {?} icu
+     * @param {?} context
+     * @return {?}
+     */
+    _SerializerIgnoreIcuExpVisitor.prototype.visitIcu = function (icu, context) {
+        var _this = this;
+        var /** @type {?} */ strCases = Object.keys(icu.cases).map(function (k) { return k + " {" + icu.cases[k].visit(_this) + "}"; });
+        // Do not take the expression into account
+        return "{" + icu.type + ", " + strCases.join(', ') + "}";
+    };
+    return _SerializerIgnoreIcuExpVisitor;
+}(_SerializerVisitor));
+/**
+ * Compute the SHA1 of the given string
+ *
+ * see http://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf
+ *
+ * WARNING: this function has not been designed not tested with security in mind.
+ *          DO NOT USE IT IN A SECURITY SENSITIVE CONTEXT.
+ * @param {?} str
+ * @return {?}
+ */
+function sha1(str) {
+    var /** @type {?} */ utf8 = utf8Encode(str);
+    var /** @type {?} */ words32 = stringToWords32(utf8, Endian.Big);
+    var /** @type {?} */ len = utf8.length * 8;
+    var /** @type {?} */ w = new Array(80);
+    var _a = [0x67452301, 0xefcdab89, 0x98badcfe, 0x10325476, 0xc3d2e1f0], a = _a[0], b = _a[1], c = _a[2], d = _a[3], e = _a[4];
+    words32[len >> 5] |= 0x80 << (24 - len % 32);
+    words32[((len + 64 >> 9) << 4) + 15] = len;
+    for (var /** @type {?} */ i = 0; i < words32.length; i += 16) {
+        var _b = [a, b, c, d, e], h0 = _b[0], h1 = _b[1], h2 = _b[2], h3 = _b[3], h4 = _b[4];
+        for (var /** @type {?} */ j = 0; j < 80; j++) {
+            if (j < 16) {
+                w[j] = words32[i + j];
+            }
+            else {
+                w[j] = rol32(w[j - 3] ^ w[j - 8] ^ w[j - 14] ^ w[j - 16], 1);
+            }
+            var _c = fk(j, b, c, d), f = _c[0], k = _c[1];
+            var /** @type {?} */ temp = [rol32(a, 5), f, e, k, w[j]].reduce(add32);
+            _d = [d, c, rol32(b, 30), a, temp], e = _d[0], d = _d[1], c = _d[2], b = _d[3], a = _d[4];
+        }
+        _e = [add32(a, h0), add32(b, h1), add32(c, h2), add32(d, h3), add32(e, h4)], a = _e[0], b = _e[1], c = _e[2], d = _e[3], e = _e[4];
+    }
+    return byteStringToHexString(words32ToByteString([a, b, c, d, e]));
+    var _d, _e;
+}
+/**
+ * @param {?} index
+ * @param {?} b
+ * @param {?} c
+ * @param {?} d
+ * @return {?}
+ */
+function fk(index, b, c, d) {
+    if (index < 20) {
+        return [(b & c) | (~b & d), 0x5a827999];
+    }
+    if (index < 40) {
+        return [b ^ c ^ d, 0x6ed9eba1];
+    }
+    if (index < 60) {
+        return [(b & c) | (b & d) | (c & d), 0x8f1bbcdc];
+    }
+    return [b ^ c ^ d, 0xca62c1d6];
+}
+/**
+ * Compute the fingerprint of the given string
+ *
+ * The output is 64 bit number encoded as a decimal string
+ *
+ * based on:
+ * https://github.com/google/closure-compiler/blob/master/src/com/google/javascript/jscomp/GoogleJsMessageIdGenerator.java
+ * @param {?} str
+ * @return {?}
+ */
+function fingerprint(str) {
+    var /** @type {?} */ utf8 = utf8Encode(str);
+    var _a = [hash32(utf8, 0), hash32(utf8, 102072)], hi = _a[0], lo = _a[1];
+    if (hi == 0 && (lo == 0 || lo == 1)) {
+        hi = hi ^ 0x130f9bef;
+        lo = lo ^ -0x6b5f56d8;
+    }
+    return [hi, lo];
+}
+/**
+ * @param {?} msg
+ * @param {?} meaning
+ * @return {?}
+ */
+function computeMsgId(msg, meaning) {
+    var _a = fingerprint(msg), hi = _a[0], lo = _a[1];
+    if (meaning) {
+        var _b = fingerprint(meaning), him = _b[0], lom = _b[1];
+        _c = add64(rol64([hi, lo], 1), [him, lom]), hi = _c[0], lo = _c[1];
+    }
+    return byteStringToDecString(words32ToByteString([hi & 0x7fffffff, lo]));
+    var _c;
+}
+/**
+ * @param {?} str
+ * @param {?} c
+ * @return {?}
+ */
+function hash32(str, c) {
+    var _a = [0x9e3779b9, 0x9e3779b9], a = _a[0], b = _a[1];
+    var /** @type {?} */ i;
+    var /** @type {?} */ len = str.length;
+    for (i = 0; i + 12 <= len; i += 12) {
+        a = add32(a, wordAt(str, i, Endian.Little));
+        b = add32(b, wordAt(str, i + 4, Endian.Little));
+        c = add32(c, wordAt(str, i + 8, Endian.Little));
+        _b = mix([a, b, c]), a = _b[0], b = _b[1], c = _b[2];
+    }
+    a = add32(a, wordAt(str, i, Endian.Little));
+    b = add32(b, wordAt(str, i + 4, Endian.Little));
+    // the first byte of c is reserved for the length
+    c = add32(c, len);
+    c = add32(c, wordAt(str, i + 8, Endian.Little) << 8);
+    return mix([a, b, c])[2];
+    var _b;
+}
+/**
+ * @param {?} __0
+ * @return {?}
+ */
+function mix(_a) {
+    var a = _a[0], b = _a[1], c = _a[2];
+    a = sub32(a, b);
+    a = sub32(a, c);
+    a ^= c >>> 13;
+    b = sub32(b, c);
+    b = sub32(b, a);
+    b ^= a << 8;
+    c = sub32(c, a);
+    c = sub32(c, b);
+    c ^= b >>> 13;
+    a = sub32(a, b);
+    a = sub32(a, c);
+    a ^= c >>> 12;
+    b = sub32(b, c);
+    b = sub32(b, a);
+    b ^= a << 16;
+    c = sub32(c, a);
+    c = sub32(c, b);
+    c ^= b >>> 5;
+    a = sub32(a, b);
+    a = sub32(a, c);
+    a ^= c >>> 3;
+    b = sub32(b, c);
+    b = sub32(b, a);
+    b ^= a << 10;
+    c = sub32(c, a);
+    c = sub32(c, b);
+    c ^= b >>> 15;
+    return [a, b, c];
+}
+var Endian = {};
+Endian.Little = 0;
+Endian.Big = 1;
+Endian[Endian.Little] = "Little";
+Endian[Endian.Big] = "Big";
+/**
+ * @param {?} a
+ * @param {?} b
+ * @return {?}
+ */
+function add32(a, b) {
+    return add32to64(a, b)[1];
+}
+/**
+ * @param {?} a
+ * @param {?} b
+ * @return {?}
+ */
+function add32to64(a, b) {
+    var /** @type {?} */ low = (a & 0xffff) + (b & 0xffff);
+    var /** @type {?} */ high = (a >>> 16) + (b >>> 16) + (low >>> 16);
+    return [high >>> 16, (high << 16) | (low & 0xffff)];
+}
+/**
+ * @param {?} __0
+ * @param {?} __1
+ * @return {?}
+ */
+function add64(_a, _b) {
+    var ah = _a[0], al = _a[1];
+    var bh = _b[0], bl = _b[1];
+    var _c = add32to64(al, bl), carry = _c[0], l = _c[1];
+    var /** @type {?} */ h = add32(add32(ah, bh), carry);
+    return [h, l];
+}
+/**
+ * @param {?} a
+ * @param {?} b
+ * @return {?}
+ */
+function sub32(a, b) {
+    var /** @type {?} */ low = (a & 0xffff) - (b & 0xffff);
+    var /** @type {?} */ high = (a >> 16) - (b >> 16) + (low >> 16);
+    return (high << 16) | (low & 0xffff);
+}
+/**
+ * @param {?} a
+ * @param {?} count
+ * @return {?}
+ */
+function rol32(a, count) {
+    return (a << count) | (a >>> (32 - count));
+}
+/**
+ * @param {?} __0
+ * @param {?} count
+ * @return {?}
+ */
+function rol64(_a, count) {
+    var hi = _a[0], lo = _a[1];
+    var /** @type {?} */ h = (hi << count) | (lo >>> (32 - count));
+    var /** @type {?} */ l = (lo << count) | (hi >>> (32 - count));
+    return [h, l];
+}
+/**
+ * @param {?} str
+ * @param {?} endian
+ * @return {?}
+ */
+function stringToWords32(str, endian) {
+    var /** @type {?} */ words32 = Array((str.length + 3) >>> 2);
+    for (var /** @type {?} */ i = 0; i < words32.length; i++) {
+        words32[i] = wordAt(str, i * 4, endian);
+    }
+    return words32;
+}
+/**
+ * @param {?} str
+ * @param {?} index
+ * @return {?}
+ */
+function byteAt(str, index) {
+    return index >= str.length ? 0 : str.charCodeAt(index) & 0xff;
+}
+/**
+ * @param {?} str
+ * @param {?} index
+ * @param {?} endian
+ * @return {?}
+ */
+function wordAt(str, index, endian) {
+    var /** @type {?} */ word = 0;
+    if (endian === Endian.Big) {
+        for (var /** @type {?} */ i = 0; i < 4; i++) {
+            word += byteAt(str, index + i) << (24 - 8 * i);
+        }
+    }
+    else {
+        for (var /** @type {?} */ i = 0; i < 4; i++) {
+            word += byteAt(str, index + i) << 8 * i;
+        }
+    }
+    return word;
+}
+/**
+ * @param {?} words32
+ * @return {?}
+ */
+function words32ToByteString(words32) {
+    return words32.reduce(function (str, word) { return str + word32ToByteString(word); }, '');
+}
+/**
+ * @param {?} word
+ * @return {?}
+ */
+function word32ToByteString(word) {
+    var /** @type {?} */ str = '';
+    for (var /** @type {?} */ i = 0; i < 4; i++) {
+        str += String.fromCharCode((word >>> 8 * (3 - i)) & 0xff);
+    }
+    return str;
+}
+/**
+ * @param {?} str
+ * @return {?}
+ */
+function byteStringToHexString(str) {
+    var /** @type {?} */ hex = '';
+    for (var /** @type {?} */ i = 0; i < str.length; i++) {
+        var /** @type {?} */ b = byteAt(str, i);
+        hex += (b >>> 4).toString(16) + (b & 0x0f).toString(16);
+    }
+    return hex.toLowerCase();
+}
+/**
+ * @param {?} str
+ * @return {?}
+ */
+function byteStringToDecString(str) {
+    var /** @type {?} */ decimal = '';
+    var /** @type {?} */ toThePower = '1';
+    for (var /** @type {?} */ i = str.length - 1; i >= 0; i--) {
+        decimal = addBigInt(decimal, numberTimesBigInt(byteAt(str, i), toThePower));
+        toThePower = numberTimesBigInt(256, toThePower);
+    }
+    return decimal.split('').reverse().join('');
+}
+/**
+ * @param {?} x
+ * @param {?} y
+ * @return {?}
+ */
+function addBigInt(x, y) {
+    var /** @type {?} */ sum = '';
+    var /** @type {?} */ len = Math.max(x.length, y.length);
+    for (var /** @type {?} */ i = 0, /** @type {?} */ carry = 0; i < len || carry; i++) {
+        var /** @type {?} */ tmpSum = carry + +(x[i] || 0) + +(y[i] || 0);
+        if (tmpSum >= 10) {
+            carry = 1;
+            sum += tmpSum - 10;
+        }
+        else {
+            carry = 0;
+            sum += tmpSum;
+        }
+    }
+    return sum;
+}
+/**
+ * @param {?} num
+ * @param {?} b
+ * @return {?}
+ */
+function numberTimesBigInt(num, b) {
+    var /** @type {?} */ product = '';
+    var /** @type {?} */ bToThePower = b;
+    for (; num !== 0; num = num >>> 1) {
+        if (num & 1)
+            product = addBigInt(product, bToThePower);
+        bToThePower = addBigInt(bToThePower, bToThePower);
+    }
+    return product;
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
 var Message = (function () {
     /**
      * @param {?} nodes message AST
@@ -18088,458 +18558,6 @@ var XmlParser = (function (_super) {
     };
     return XmlParser;
 }(Parser$1));
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @param {?} message
- * @return {?}
- */
-function digest(message) {
-    return message.id || sha1(serializeNodes(message.nodes).join('') + ("[" + message.meaning + "]"));
-}
-/**
- * @param {?} message
- * @return {?}
- */
-function decimalDigest(message) {
-    if (message.id) {
-        return message.id;
-    }
-    var /** @type {?} */ visitor = new _SerializerIgnoreIcuExpVisitor();
-    var /** @type {?} */ parts = message.nodes.map(function (a) { return a.visit(visitor, null); });
-    return computeMsgId(parts.join(''), message.meaning);
-}
-/**
- * Serialize the i18n ast to something xml-like in order to generate an UID.
- *
- * The visitor is also used in the i18n parser tests
- *
- * \@internal
- */
-var _SerializerVisitor = (function () {
-    function _SerializerVisitor() {
-    }
-    /**
-     * @param {?} text
-     * @param {?} context
-     * @return {?}
-     */
-    _SerializerVisitor.prototype.visitText = function (text, context) { return text.value; };
-    /**
-     * @param {?} container
-     * @param {?} context
-     * @return {?}
-     */
-    _SerializerVisitor.prototype.visitContainer = function (container, context) {
-        var _this = this;
-        return "[" + container.children.map(function (child) { return child.visit(_this); }).join(', ') + "]";
-    };
-    /**
-     * @param {?} icu
-     * @param {?} context
-     * @return {?}
-     */
-    _SerializerVisitor.prototype.visitIcu = function (icu, context) {
-        var _this = this;
-        var /** @type {?} */ strCases = Object.keys(icu.cases).map(function (k) { return k + " {" + icu.cases[k].visit(_this) + "}"; });
-        return "{" + icu.expression + ", " + icu.type + ", " + strCases.join(', ') + "}";
-    };
-    /**
-     * @param {?} ph
-     * @param {?} context
-     * @return {?}
-     */
-    _SerializerVisitor.prototype.visitTagPlaceholder = function (ph, context) {
-        var _this = this;
-        return ph.isVoid ?
-            "<ph tag name=\"" + ph.startName + "\"/>" :
-            "<ph tag name=\"" + ph.startName + "\">" + ph.children.map(function (child) { return child.visit(_this); }).join(', ') + "</ph name=\"" + ph.closeName + "\">";
-    };
-    /**
-     * @param {?} ph
-     * @param {?} context
-     * @return {?}
-     */
-    _SerializerVisitor.prototype.visitPlaceholder = function (ph, context) {
-        return ph.value ? "<ph name=\"" + ph.name + "\">" + ph.value + "</ph>" : "<ph name=\"" + ph.name + "\"/>";
-    };
-    /**
-     * @param {?} ph
-     * @param {?=} context
-     * @return {?}
-     */
-    _SerializerVisitor.prototype.visitIcuPlaceholder = function (ph, context) {
-        return "<ph icu name=\"" + ph.name + "\">" + ph.value.visit(this) + "</ph>";
-    };
-    return _SerializerVisitor;
-}());
-var serializerVisitor = new _SerializerVisitor();
-/**
- * @param {?} nodes
- * @return {?}
- */
-function serializeNodes(nodes) {
-    return nodes.map(function (a) { return a.visit(serializerVisitor, null); });
-}
-/**
- * Serialize the i18n ast to something xml-like in order to generate an UID.
- *
- * Ignore the ICU expressions so that message IDs stays identical if only the expression changes.
- *
- * \@internal
- */
-var _SerializerIgnoreIcuExpVisitor = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](_SerializerIgnoreIcuExpVisitor, _super);
-    function _SerializerIgnoreIcuExpVisitor() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    /**
-     * @param {?} icu
-     * @param {?} context
-     * @return {?}
-     */
-    _SerializerIgnoreIcuExpVisitor.prototype.visitIcu = function (icu, context) {
-        var _this = this;
-        var /** @type {?} */ strCases = Object.keys(icu.cases).map(function (k) { return k + " {" + icu.cases[k].visit(_this) + "}"; });
-        // Do not take the expression into account
-        return "{" + icu.type + ", " + strCases.join(', ') + "}";
-    };
-    return _SerializerIgnoreIcuExpVisitor;
-}(_SerializerVisitor));
-/**
- * Compute the SHA1 of the given string
- *
- * see http://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf
- *
- * WARNING: this function has not been designed not tested with security in mind.
- *          DO NOT USE IT IN A SECURITY SENSITIVE CONTEXT.
- * @param {?} str
- * @return {?}
- */
-function sha1(str) {
-    var /** @type {?} */ utf8 = utf8Encode(str);
-    var /** @type {?} */ words32 = stringToWords32(utf8, Endian.Big);
-    var /** @type {?} */ len = utf8.length * 8;
-    var /** @type {?} */ w = new Array(80);
-    var _a = [0x67452301, 0xefcdab89, 0x98badcfe, 0x10325476, 0xc3d2e1f0], a = _a[0], b = _a[1], c = _a[2], d = _a[3], e = _a[4];
-    words32[len >> 5] |= 0x80 << (24 - len % 32);
-    words32[((len + 64 >> 9) << 4) + 15] = len;
-    for (var /** @type {?} */ i = 0; i < words32.length; i += 16) {
-        var _b = [a, b, c, d, e], h0 = _b[0], h1 = _b[1], h2 = _b[2], h3 = _b[3], h4 = _b[4];
-        for (var /** @type {?} */ j = 0; j < 80; j++) {
-            if (j < 16) {
-                w[j] = words32[i + j];
-            }
-            else {
-                w[j] = rol32(w[j - 3] ^ w[j - 8] ^ w[j - 14] ^ w[j - 16], 1);
-            }
-            var _c = fk(j, b, c, d), f = _c[0], k = _c[1];
-            var /** @type {?} */ temp = [rol32(a, 5), f, e, k, w[j]].reduce(add32);
-            _d = [d, c, rol32(b, 30), a, temp], e = _d[0], d = _d[1], c = _d[2], b = _d[3], a = _d[4];
-        }
-        _e = [add32(a, h0), add32(b, h1), add32(c, h2), add32(d, h3), add32(e, h4)], a = _e[0], b = _e[1], c = _e[2], d = _e[3], e = _e[4];
-    }
-    return byteStringToHexString(words32ToByteString([a, b, c, d, e]));
-    var _d, _e;
-}
-/**
- * @param {?} index
- * @param {?} b
- * @param {?} c
- * @param {?} d
- * @return {?}
- */
-function fk(index, b, c, d) {
-    if (index < 20) {
-        return [(b & c) | (~b & d), 0x5a827999];
-    }
-    if (index < 40) {
-        return [b ^ c ^ d, 0x6ed9eba1];
-    }
-    if (index < 60) {
-        return [(b & c) | (b & d) | (c & d), 0x8f1bbcdc];
-    }
-    return [b ^ c ^ d, 0xca62c1d6];
-}
-/**
- * Compute the fingerprint of the given string
- *
- * The output is 64 bit number encoded as a decimal string
- *
- * based on:
- * https://github.com/google/closure-compiler/blob/master/src/com/google/javascript/jscomp/GoogleJsMessageIdGenerator.java
- * @param {?} str
- * @return {?}
- */
-function fingerprint(str) {
-    var /** @type {?} */ utf8 = utf8Encode(str);
-    var _a = [hash32(utf8, 0), hash32(utf8, 102072)], hi = _a[0], lo = _a[1];
-    if (hi == 0 && (lo == 0 || lo == 1)) {
-        hi = hi ^ 0x130f9bef;
-        lo = lo ^ -0x6b5f56d8;
-    }
-    return [hi, lo];
-}
-/**
- * @param {?} msg
- * @param {?} meaning
- * @return {?}
- */
-function computeMsgId(msg, meaning) {
-    var _a = fingerprint(msg), hi = _a[0], lo = _a[1];
-    if (meaning) {
-        var _b = fingerprint(meaning), him = _b[0], lom = _b[1];
-        _c = add64(rol64([hi, lo], 1), [him, lom]), hi = _c[0], lo = _c[1];
-    }
-    return byteStringToDecString(words32ToByteString([hi & 0x7fffffff, lo]));
-    var _c;
-}
-/**
- * @param {?} str
- * @param {?} c
- * @return {?}
- */
-function hash32(str, c) {
-    var _a = [0x9e3779b9, 0x9e3779b9], a = _a[0], b = _a[1];
-    var /** @type {?} */ i;
-    var /** @type {?} */ len = str.length;
-    for (i = 0; i + 12 <= len; i += 12) {
-        a = add32(a, wordAt(str, i, Endian.Little));
-        b = add32(b, wordAt(str, i + 4, Endian.Little));
-        c = add32(c, wordAt(str, i + 8, Endian.Little));
-        _b = mix([a, b, c]), a = _b[0], b = _b[1], c = _b[2];
-    }
-    a = add32(a, wordAt(str, i, Endian.Little));
-    b = add32(b, wordAt(str, i + 4, Endian.Little));
-    // the first byte of c is reserved for the length
-    c = add32(c, len);
-    c = add32(c, wordAt(str, i + 8, Endian.Little) << 8);
-    return mix([a, b, c])[2];
-    var _b;
-}
-/**
- * @param {?} __0
- * @return {?}
- */
-function mix(_a) {
-    var a = _a[0], b = _a[1], c = _a[2];
-    a = sub32(a, b);
-    a = sub32(a, c);
-    a ^= c >>> 13;
-    b = sub32(b, c);
-    b = sub32(b, a);
-    b ^= a << 8;
-    c = sub32(c, a);
-    c = sub32(c, b);
-    c ^= b >>> 13;
-    a = sub32(a, b);
-    a = sub32(a, c);
-    a ^= c >>> 12;
-    b = sub32(b, c);
-    b = sub32(b, a);
-    b ^= a << 16;
-    c = sub32(c, a);
-    c = sub32(c, b);
-    c ^= b >>> 5;
-    a = sub32(a, b);
-    a = sub32(a, c);
-    a ^= c >>> 3;
-    b = sub32(b, c);
-    b = sub32(b, a);
-    b ^= a << 10;
-    c = sub32(c, a);
-    c = sub32(c, b);
-    c ^= b >>> 15;
-    return [a, b, c];
-}
-var Endian = {};
-Endian.Little = 0;
-Endian.Big = 1;
-Endian[Endian.Little] = "Little";
-Endian[Endian.Big] = "Big";
-/**
- * @param {?} a
- * @param {?} b
- * @return {?}
- */
-function add32(a, b) {
-    return add32to64(a, b)[1];
-}
-/**
- * @param {?} a
- * @param {?} b
- * @return {?}
- */
-function add32to64(a, b) {
-    var /** @type {?} */ low = (a & 0xffff) + (b & 0xffff);
-    var /** @type {?} */ high = (a >>> 16) + (b >>> 16) + (low >>> 16);
-    return [high >>> 16, (high << 16) | (low & 0xffff)];
-}
-/**
- * @param {?} __0
- * @param {?} __1
- * @return {?}
- */
-function add64(_a, _b) {
-    var ah = _a[0], al = _a[1];
-    var bh = _b[0], bl = _b[1];
-    var _c = add32to64(al, bl), carry = _c[0], l = _c[1];
-    var /** @type {?} */ h = add32(add32(ah, bh), carry);
-    return [h, l];
-}
-/**
- * @param {?} a
- * @param {?} b
- * @return {?}
- */
-function sub32(a, b) {
-    var /** @type {?} */ low = (a & 0xffff) - (b & 0xffff);
-    var /** @type {?} */ high = (a >> 16) - (b >> 16) + (low >> 16);
-    return (high << 16) | (low & 0xffff);
-}
-/**
- * @param {?} a
- * @param {?} count
- * @return {?}
- */
-function rol32(a, count) {
-    return (a << count) | (a >>> (32 - count));
-}
-/**
- * @param {?} __0
- * @param {?} count
- * @return {?}
- */
-function rol64(_a, count) {
-    var hi = _a[0], lo = _a[1];
-    var /** @type {?} */ h = (hi << count) | (lo >>> (32 - count));
-    var /** @type {?} */ l = (lo << count) | (hi >>> (32 - count));
-    return [h, l];
-}
-/**
- * @param {?} str
- * @param {?} endian
- * @return {?}
- */
-function stringToWords32(str, endian) {
-    var /** @type {?} */ words32 = Array((str.length + 3) >>> 2);
-    for (var /** @type {?} */ i = 0; i < words32.length; i++) {
-        words32[i] = wordAt(str, i * 4, endian);
-    }
-    return words32;
-}
-/**
- * @param {?} str
- * @param {?} index
- * @return {?}
- */
-function byteAt(str, index) {
-    return index >= str.length ? 0 : str.charCodeAt(index) & 0xff;
-}
-/**
- * @param {?} str
- * @param {?} index
- * @param {?} endian
- * @return {?}
- */
-function wordAt(str, index, endian) {
-    var /** @type {?} */ word = 0;
-    if (endian === Endian.Big) {
-        for (var /** @type {?} */ i = 0; i < 4; i++) {
-            word += byteAt(str, index + i) << (24 - 8 * i);
-        }
-    }
-    else {
-        for (var /** @type {?} */ i = 0; i < 4; i++) {
-            word += byteAt(str, index + i) << 8 * i;
-        }
-    }
-    return word;
-}
-/**
- * @param {?} words32
- * @return {?}
- */
-function words32ToByteString(words32) {
-    return words32.reduce(function (str, word) { return str + word32ToByteString(word); }, '');
-}
-/**
- * @param {?} word
- * @return {?}
- */
-function word32ToByteString(word) {
-    var /** @type {?} */ str = '';
-    for (var /** @type {?} */ i = 0; i < 4; i++) {
-        str += String.fromCharCode((word >>> 8 * (3 - i)) & 0xff);
-    }
-    return str;
-}
-/**
- * @param {?} str
- * @return {?}
- */
-function byteStringToHexString(str) {
-    var /** @type {?} */ hex = '';
-    for (var /** @type {?} */ i = 0; i < str.length; i++) {
-        var /** @type {?} */ b = byteAt(str, i);
-        hex += (b >>> 4).toString(16) + (b & 0x0f).toString(16);
-    }
-    return hex.toLowerCase();
-}
-/**
- * @param {?} str
- * @return {?}
- */
-function byteStringToDecString(str) {
-    var /** @type {?} */ decimal = '';
-    var /** @type {?} */ toThePower = '1';
-    for (var /** @type {?} */ i = str.length - 1; i >= 0; i--) {
-        decimal = addBigInt(decimal, numberTimesBigInt(byteAt(str, i), toThePower));
-        toThePower = numberTimesBigInt(256, toThePower);
-    }
-    return decimal.split('').reverse().join('');
-}
-/**
- * @param {?} x
- * @param {?} y
- * @return {?}
- */
-function addBigInt(x, y) {
-    var /** @type {?} */ sum = '';
-    var /** @type {?} */ len = Math.max(x.length, y.length);
-    for (var /** @type {?} */ i = 0, /** @type {?} */ carry = 0; i < len || carry; i++) {
-        var /** @type {?} */ tmpSum = carry + +(x[i] || 0) + +(y[i] || 0);
-        if (tmpSum >= 10) {
-            carry = 1;
-            sum += tmpSum - 10;
-        }
-        else {
-            carry = 0;
-            sum += tmpSum;
-        }
-    }
-    return sum;
-}
-/**
- * @param {?} num
- * @param {?} b
- * @return {?}
- */
-function numberTimesBigInt(num, b) {
-    var /** @type {?} */ product = '';
-    var /** @type {?} */ bToThePower = b;
-    for (; num !== 0; num = num >>> 1) {
-        if (num & 1)
-            product = addBigInt(product, bToThePower);
-        bToThePower = addBigInt(bToThePower, bToThePower);
-    }
-    return product;
-}
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -20399,6 +20417,10 @@ var I18NHtmlParser = (function () {
             this._translationBundle =
                 TranslationBundle.load(translations, 'i18n', serializer, missingTranslation, console);
         }
+        else {
+            this._translationBundle =
+                new TranslationBundle({}, null, digest, undefined, missingTranslation, console);
+        }
     }
     /**
      * @param {?} source
@@ -20411,10 +20433,6 @@ var I18NHtmlParser = (function () {
         if (parseExpansionForms === void 0) { parseExpansionForms = false; }
         if (interpolationConfig === void 0) { interpolationConfig = DEFAULT_INTERPOLATION_CONFIG; }
         var /** @type {?} */ parseResult = this._htmlParser.parse(source, url, parseExpansionForms, interpolationConfig);
-        if (!this._translationBundle) {
-            // Do not enable i18n when no translation bundle is provided
-            return parseResult;
-        }
         if (parseResult.errors.length) {
             return new ParseTreeResult(parseResult.rootNodes, parseResult.errors);
         }
@@ -22172,7 +22190,7 @@ function warnOnlyOnce(warnings) {
  *
  * This is currently an internal-only feature and not meant for general use.
  */
-var TEMPLATE_TRANSFORMS = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* InjectionToken */]('TemplateTransforms');
+var TEMPLATE_TRANSFORMS = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* InjectionToken */]('TemplateTransforms');
 var TemplateParseError = (function (_super) {
     __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](TemplateParseError, _super);
     /**
@@ -22354,7 +22372,7 @@ TemplateParser.ctorParameters = function () { return [
     { type: ElementSchemaRegistry, },
     { type: I18NHtmlParser, },
     { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_46" /* ɵConsole */], },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [TEMPLATE_TRANSFORMS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [TEMPLATE_TRANSFORMS,] },] },
 ]; };
 var TemplateParseVisitor = (function () {
     /**
@@ -23200,7 +23218,7 @@ UrlResolver.decorators = [
  * @nocollapse
  */
 UrlResolver.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["_47" /* PACKAGE_ROOT_URL */],] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["_47" /* PACKAGE_ROOT_URL */],] },] },
 ]; };
 /**
  * Extract the scheme of a URL.
@@ -24319,7 +24337,7 @@ JitSummaryResolver.ctorParameters = function () { return []; };
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var ERROR_COLLECTOR_TOKEN = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* InjectionToken */]('ErrorCollector');
+var ERROR_COLLECTOR_TOKEN = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* InjectionToken */]('ErrorCollector');
 var CompileMetadataResolver = (function () {
     /**
      * @param {?} _config
@@ -25160,10 +25178,10 @@ var CompileMetadataResolver = (function () {
                         isAttribute = true;
                         token = paramEntry.attributeName;
                     }
-                    else if (paramEntry instanceof __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */]) {
+                    else if (paramEntry instanceof __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */]) {
                         token = paramEntry.token;
                     }
-                    else if (paramEntry instanceof __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* InjectionToken */]) {
+                    else if (paramEntry instanceof __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* InjectionToken */]) {
                         token = paramEntry;
                     }
                     else if (isValidType(paramEntry) && token == null) {
@@ -25444,7 +25462,7 @@ CompileMetadataResolver.ctorParameters = function () { return [
     { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_46" /* ɵConsole */], },
     { type: StaticSymbolCache, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] },] },
     { type: CompileReflector, },
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [ERROR_COLLECTOR_TOKEN,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [ERROR_COLLECTOR_TOKEN,] },] },
 ]; };
 /**
  * @param {?} tree
@@ -26457,10 +26475,9 @@ var LiteralMapEntry = (function () {
     /**
      * @param {?} key
      * @param {?} value
-     * @param {?=} quoted
+     * @param {?} quoted
      */
     function LiteralMapEntry(key, value, quoted) {
-        if (quoted === void 0) { quoted = false; }
         this.key = key;
         this.value = value;
         this.quoted = quoted;
@@ -27563,13 +27580,11 @@ function literalArr(values, type, sourceSpan) {
 /**
  * @param {?} values
  * @param {?=} type
- * @param {?=} quoted
  * @return {?}
  */
-function literalMap(values, type, quoted) {
+function literalMap(values, type) {
     if (type === void 0) { type = null; }
-    if (quoted === void 0) { quoted = false; }
-    return new LiteralMapExpr(values.map(function (entry) { return new LiteralMapEntry(entry[0], entry[1], quoted); }), type, null);
+    return new LiteralMapExpr(values.map(function (e) { return new LiteralMapEntry(e.key, e.value, e.quoted); }), type, null);
 }
 /**
  * @param {?} expr
@@ -30642,7 +30657,14 @@ function convertActionBinding(localResolver, implicitReceiver, action, bindingId
         },
         createLiteralMapConverter: function (keys) {
             // Note: no caching for literal maps in actions.
-            return function (args) { return literalMap(/** @type {?} */ (keys.map(function (key, i) { return [key, args[i]]; }))); };
+            return function (values) {
+                var /** @type {?} */ entries = keys.map(function (k, i) { return ({
+                    key: k.key,
+                    value: values[i],
+                    quoted: k.quoted,
+                }); });
+                return literalMap(entries);
+            };
         },
         createPipeConverter: function (name) {
             throw new Error("Illegal State: Actions are not allowed to contain pipes. Pipe: " + name);
@@ -31598,9 +31620,9 @@ var ViewCompiler = (function () {
             renderComponentVarName = ((renderComponentVar.name));
             outputCtx.statements.push(renderComponentVar
                 .set(importExpr(Identifiers.createRendererType2).callFn([new LiteralMapExpr([
-                    new LiteralMapEntry('encapsulation', literal(template_1.encapsulation)),
-                    new LiteralMapEntry('styles', styles),
-                    new LiteralMapEntry('data', new LiteralMapExpr(customRenderData))
+                    new LiteralMapEntry('encapsulation', literal(template_1.encapsulation), false),
+                    new LiteralMapEntry('styles', styles, false),
+                    new LiteralMapEntry('data', new LiteralMapExpr(customRenderData), false)
                 ])]))
                 .toDeclStmt(importType(Identifiers.RendererType2), [StmtModifier.Final, StmtModifier.Exported]));
         }
@@ -31703,7 +31725,7 @@ var ViewBuilder = (function () {
                     nodeFlags: flags,
                     nodeDef: importExpr(Identifiers.queryDef).callFn([
                         literal(flags), literal(queryId),
-                        new LiteralMapExpr([new LiteralMapEntry(query.propertyName, literal(bindingType))])
+                        new LiteralMapExpr([new LiteralMapEntry(query.propertyName, literal(bindingType), false)])
                     ])
                 }); });
             });
@@ -32037,7 +32059,7 @@ var ViewBuilder = (function () {
                 nodeFlags: flags,
                 nodeDef: importExpr(Identifiers.queryDef).callFn([
                     literal(flags), literal(queryId),
-                    new LiteralMapExpr([new LiteralMapEntry(query.propertyName, literal(bindingType))])
+                    new LiteralMapExpr([new LiteralMapEntry(query.propertyName, literal(bindingType), false)])
                 ]),
             }); });
         });
@@ -32232,12 +32254,13 @@ var ViewBuilder = (function () {
             var /** @type {?} */ valueExpr_2 = importExpr(Identifiers.EMPTY_MAP);
             return function () { return valueExpr_2; };
         }
+        // function pureObjectDef(propToIndex: {[p: string]: number}): NodeDef
+        var /** @type {?} */ map = literalMap(keys.map(function (e, i) { return (Object.assign({}, e, { value: literal(i) })); }));
         var /** @type {?} */ nodeIndex = this.nodes.length;
-        // function pureObjectDef(propertyNames: string[]): NodeDef
         this.nodes.push(function () { return ({
             sourceSpan: sourceSpan,
             nodeFlags: 64 /* TypePureObject */,
-            nodeDef: importExpr(Identifiers.pureObjectDef).callFn([literalArr(keys.map(function (key) { return literal(key); }))])
+            nodeDef: importExpr(Identifiers.pureObjectDef).callFn([map])
         }); });
         return function (args) { return callCheckStmt(nodeIndex, args); };
     };
@@ -32855,7 +32878,7 @@ var ToJsonSerializer = (function (_super) {
                     __symbol: index,
                     name: symbol.name,
                     // We convert the source filenames tinto output filenames,
-                    // as the generated summary file will be used when teh current
+                    // as the generated summary file will be used when the current
                     // compilation unit is used as a library
                     filePath: _this.summaryResolver.getLibraryFileName(symbol.filePath),
                     importAs: importAs
@@ -33016,7 +33039,7 @@ var ForJitSerializer = (function () {
              */
             Transformer.prototype.visitStringMap = function (map, context) {
                 var _this = this;
-                return new LiteralMapExpr(Object.keys(map).map(function (key) { return new LiteralMapEntry(key, visitValue(map[key], _this, context)); }));
+                return new LiteralMapExpr(Object.keys(map).map(function (key) { return new LiteralMapEntry(key, visitValue(map[key], _this, context), false); }));
             };
             /**
              * @param {?} value
@@ -33891,7 +33914,7 @@ var StaticReflector = (function () {
         this._registerDecoratorOrConstructor(this.findDeclaration(ANGULAR_CORE, 'Injectable'), __WEBPACK_IMPORTED_MODULE_1__angular_core__["c" /* Injectable */]);
         this._registerDecoratorOrConstructor(this.findDeclaration(ANGULAR_CORE, 'Self'), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */]);
         this._registerDecoratorOrConstructor(this.findDeclaration(ANGULAR_CORE, 'SkipSelf'), __WEBPACK_IMPORTED_MODULE_1__angular_core__["E" /* SkipSelf */]);
-        this._registerDecoratorOrConstructor(this.findDeclaration(ANGULAR_CORE, 'Inject'), __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */]);
+        this._registerDecoratorOrConstructor(this.findDeclaration(ANGULAR_CORE, 'Inject'), __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */]);
         this._registerDecoratorOrConstructor(this.findDeclaration(ANGULAR_CORE, 'Optional'), __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */]);
         this._registerDecoratorOrConstructor(this.findDeclaration(ANGULAR_CORE, 'Attribute'), __WEBPACK_IMPORTED_MODULE_1__angular_core__["U" /* Attribute */]);
         this._registerDecoratorOrConstructor(this.findDeclaration(ANGULAR_CORE, 'ContentChild'), __WEBPACK_IMPORTED_MODULE_1__angular_core__["_55" /* ContentChild */]);
@@ -35542,7 +35565,7 @@ var StatementInterpreter = (function () {
     StatementInterpreter.prototype.visitLiteralMapExpr = function (ast, ctx) {
         var _this = this;
         var /** @type {?} */ result = {};
-        ast.entries.forEach(function (entry) { return ((result))[entry.key] = entry.value.visitExpression(_this, ctx); });
+        ast.entries.forEach(function (entry) { return result[entry.key] = entry.value.visitExpression(_this, ctx); });
         return result;
     };
     /**
@@ -35885,7 +35908,7 @@ var JitEmitterVisitor = (function (_super) {
      * @return {?}
      */
     JitEmitterVisitor.prototype.createReturnStmt = function (ctx) {
-        var /** @type {?} */ stmt = new ReturnStatement(new LiteralMapExpr(this._evalExportedVars.map(function (resultVar) { return new LiteralMapEntry(resultVar, variable(resultVar)); })));
+        var /** @type {?} */ stmt = new ReturnStatement(new LiteralMapExpr(this._evalExportedVars.map(function (resultVar) { return new LiteralMapEntry(resultVar, variable(resultVar), false); })));
         stmt.visitStatement(this, ctx);
     };
     /**
@@ -36665,7 +36688,7 @@ var Extractor = (function () {
      * @return {?}
      */
     Extractor.create = function (host, locale) {
-        var /** @type {?} */ htmlParser = new I18NHtmlParser(new HtmlParser());
+        var /** @type {?} */ htmlParser = new HtmlParser();
         var /** @type {?} */ urlResolver = createOfflineCompileUrlResolver();
         var /** @type {?} */ symbolCache = new StaticSymbolCache();
         var /** @type {?} */ summaryResolver = new AotSummaryResolver(host, symbolCache);
@@ -36769,7 +36792,7 @@ var _NO_RESOURCE_LOADER = {
         throw new Error("No ResourceLoader implementation has been provided. Can't read the url \"" + url + "\"");
     }
 };
-var baseHtmlParser = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* InjectionToken */]('HtmlParser');
+var baseHtmlParser = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* InjectionToken */]('HtmlParser');
 /**
  * A set of providers that provide `JitCompiler` and its dependencies to use for
  * template compilation.
@@ -36788,11 +36811,15 @@ var COMPILER_PROVIDERS = [
     },
     {
         provide: I18NHtmlParser,
-        useFactory: function (parser, translations, format, config, console) { return new I18NHtmlParser(parser, translations, format, config.missingTranslation, console); },
+        useFactory: function (parser, translations, format, config, console) {
+            translations = translations || '';
+            var missingTranslation = translations ? config.missingTranslation : __WEBPACK_IMPORTED_MODULE_1__angular_core__["_16" /* MissingTranslationStrategy */].Ignore;
+            return new I18NHtmlParser(parser, translations, format, missingTranslation, console);
+        },
         deps: [
             baseHtmlParser,
-            [new __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */](), new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */](__WEBPACK_IMPORTED_MODULE_1__angular_core__["_69" /* TRANSLATIONS */])],
-            [new __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */](), new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */](__WEBPACK_IMPORTED_MODULE_1__angular_core__["_25" /* TRANSLATIONS_FORMAT */])],
+            [new __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */](), new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */](__WEBPACK_IMPORTED_MODULE_1__angular_core__["_69" /* TRANSLATIONS */])],
+            [new __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */](), new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */](__WEBPACK_IMPORTED_MODULE_1__angular_core__["_25" /* TRANSLATIONS_FORMAT */])],
             [CompilerConfig],
             [__WEBPACK_IMPORTED_MODULE_1__angular_core__["_46" /* ɵConsole */]],
         ]
@@ -36868,7 +36895,7 @@ JitCompilerFactory.decorators = [
  * @nocollapse
  */
 JitCompilerFactory.ctorParameters = function () { return [
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* COMPILER_OPTIONS */],] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* COMPILER_OPTIONS */],] },] },
 ]; };
 /**
  * A platform that included corePlatform and the compiler.
@@ -37034,9 +37061,9 @@ function _mergeArrays(parts) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_70", function() { return ReflectiveInjector; });
 /* unused harmony export ResolvedReflectiveFactory */
 /* unused harmony export ReflectiveKey */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return InjectionToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return InjectionToken; });
 /* unused harmony export OpaqueToken */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return Inject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Inject; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return Optional; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Injectable; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_12", function() { return Self; });
@@ -37165,7 +37192,7 @@ function _mergeArrays(parts) {
 /* unused harmony export ɵu */
 
 /**
- * @license Angular v4.2.5
+ * @license Angular v4.2.6
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -37961,7 +37988,7 @@ var Version = (function () {
 /**
  * \@stable
  */
-var VERSION = new Version('4.2.5');
+var VERSION = new Version('4.2.6');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -40908,26 +40935,46 @@ var NgZone = (function () {
      */
     function NgZone(_a) {
         var _b = _a.enableLongStackTrace, enableLongStackTrace = _b === void 0 ? false : _b;
-        this._hasPendingMicrotasks = false;
-        this._hasPendingMacrotasks = false;
-        this._isStable = true;
-        this._nesting = 0;
-        this._onUnstable = new EventEmitter(false);
-        this._onMicrotaskEmpty = new EventEmitter(false);
-        this._onStable = new EventEmitter(false);
-        this._onErrorEvents = new EventEmitter(false);
+        this.hasPendingMicrotasks = false;
+        this.hasPendingMacrotasks = false;
+        /**
+         * Whether there are no outstanding microtasks or macrotasks.
+         */
+        this.isStable = true;
+        /**
+         * Notifies when code enters Angular Zone. This gets fired first on VM Turn.
+         */
+        this.onUnstable = new EventEmitter(false);
+        /**
+         * Notifies when there is no more microtasks enqueue in the current VM Turn.
+         * This is a hint for Angular to do change detection, which may enqueue more microtasks.
+         * For this reason this event can fire multiple times per VM Turn.
+         */
+        this.onMicrotaskEmpty = new EventEmitter(false);
+        /**
+         * Notifies when the last `onMicrotaskEmpty` has run and there are no more microtasks, which
+         * implies we are about to relinquish VM turn.
+         * This event gets called just once.
+         */
+        this.onStable = new EventEmitter(false);
+        /**
+         * Notifies that an error has been delivered.
+         */
+        this.onError = new EventEmitter(false);
         if (typeof Zone == 'undefined') {
             throw new Error('Angular requires Zone.js prolyfill.');
         }
         Zone.assertZonePatched();
-        this.outer = this.inner = Zone.current;
+        var self = this;
+        self._nesting = 0;
+        self._outer = self._inner = Zone.current;
         if (Zone['wtfZoneSpec']) {
-            this.inner = this.inner.fork(Zone['wtfZoneSpec']);
+            self._inner = self._inner.fork(Zone['wtfZoneSpec']);
         }
         if (enableLongStackTrace && Zone['longStackTraceZoneSpec']) {
-            this.inner = this.inner.fork(Zone['longStackTraceZoneSpec']);
+            self._inner = self._inner.fork(Zone['longStackTraceZoneSpec']);
         }
-        this.forkInnerZoneWithAngularBehavior();
+        forkInnerZoneWithAngularBehavior(self);
     }
     /**
      * @return {?}
@@ -40963,14 +41010,14 @@ var NgZone = (function () {
      * @param {?} fn
      * @return {?}
      */
-    NgZone.prototype.run = function (fn) { return this.inner.run(fn); };
+    NgZone.prototype.run = function (fn) { return (((this)))._inner.run(fn); };
     /**
      * Same as `run`, except that synchronous errors are caught and forwarded via `onError` and not
      * rethrown.
      * @param {?} fn
      * @return {?}
      */
-    NgZone.prototype.runGuarded = function (fn) { return this.inner.runGuarded(fn); };
+    NgZone.prototype.runGuarded = function (fn) { return (((this)))._inner.runGuarded(fn); };
     /**
      * Executes the `fn` function synchronously in Angular's parent zone and returns value returned by
      * the function.
@@ -40986,178 +41033,98 @@ var NgZone = (function () {
      * @param {?} fn
      * @return {?}
      */
-    NgZone.prototype.runOutsideAngular = function (fn) { return this.outer.run(fn); };
-    Object.defineProperty(NgZone.prototype, "onUnstable", {
-        /**
-         * Notifies when code enters Angular Zone. This gets fired first on VM Turn.
-         * @return {?}
-         */
-        get: function () { return this._onUnstable; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgZone.prototype, "onMicrotaskEmpty", {
-        /**
-         * Notifies when there is no more microtasks enqueue in the current VM Turn.
-         * This is a hint for Angular to do change detection, which may enqueue more microtasks.
-         * For this reason this event can fire multiple times per VM Turn.
-         * @return {?}
-         */
-        get: function () { return this._onMicrotaskEmpty; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgZone.prototype, "onStable", {
-        /**
-         * Notifies when the last `onMicrotaskEmpty` has run and there are no more microtasks, which
-         * implies we are about to relinquish VM turn.
-         * This event gets called just once.
-         * @return {?}
-         */
-        get: function () { return this._onStable; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgZone.prototype, "onError", {
-        /**
-         * Notify that an error has been delivered.
-         * @return {?}
-         */
-        get: function () { return this._onErrorEvents; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgZone.prototype, "isStable", {
-        /**
-         * Whether there are no outstanding microtasks or macrotasks.
-         * @return {?}
-         */
-        get: function () { return this._isStable; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgZone.prototype, "hasPendingMicrotasks", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._hasPendingMicrotasks; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgZone.prototype, "hasPendingMacrotasks", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._hasPendingMacrotasks; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @return {?}
-     */
-    NgZone.prototype.checkStable = function () {
-        var _this = this;
-        if (this._nesting == 0 && !this._hasPendingMicrotasks && !this._isStable) {
-            try {
-                this._nesting++;
-                this._onMicrotaskEmpty.emit(null);
-            }
-            finally {
-                this._nesting--;
-                if (!this._hasPendingMicrotasks) {
-                    try {
-                        this.runOutsideAngular(function () { return _this._onStable.emit(null); });
-                    }
-                    finally {
-                        this._isStable = true;
-                    }
-                }
-            }
-        }
-    };
-    /**
-     * @return {?}
-     */
-    NgZone.prototype.forkInnerZoneWithAngularBehavior = function () {
-        var _this = this;
-        this.inner = this.inner.fork({
-            name: 'angular',
-            properties: /** @type {?} */ ({ 'isAngularZone': true }),
-            onInvokeTask: function (delegate, current, target, task, applyThis, applyArgs) {
-                try {
-                    _this.onEnter();
-                    return delegate.invokeTask(target, task, applyThis, applyArgs);
-                }
-                finally {
-                    _this.onLeave();
-                }
-            },
-            onInvoke: function (delegate, current, target, callback, applyThis, applyArgs, source) {
-                try {
-                    _this.onEnter();
-                    return delegate.invoke(target, callback, applyThis, applyArgs, source);
-                }
-                finally {
-                    _this.onLeave();
-                }
-            },
-            onHasTask: function (delegate, current, target, hasTaskState) {
-                delegate.hasTask(target, hasTaskState);
-                if (current === target) {
-                    // We are only interested in hasTask events which originate from our zone
-                    // (A child hasTask event is not interesting to us)
-                    if (hasTaskState.change == 'microTask') {
-                        _this.setHasMicrotask(hasTaskState.microTask);
-                    }
-                    else if (hasTaskState.change == 'macroTask') {
-                        _this.setHasMacrotask(hasTaskState.macroTask);
-                    }
-                }
-            },
-            onHandleError: function (delegate, current, target, error) {
-                delegate.handleError(target, error);
-                _this.triggerError(error);
-                return false;
-            }
-        });
-    };
-    /**
-     * @return {?}
-     */
-    NgZone.prototype.onEnter = function () {
-        this._nesting++;
-        if (this._isStable) {
-            this._isStable = false;
-            this._onUnstable.emit(null);
-        }
-    };
-    /**
-     * @return {?}
-     */
-    NgZone.prototype.onLeave = function () {
-        this._nesting--;
-        this.checkStable();
-    };
-    /**
-     * @param {?} hasMicrotasks
-     * @return {?}
-     */
-    NgZone.prototype.setHasMicrotask = function (hasMicrotasks) {
-        this._hasPendingMicrotasks = hasMicrotasks;
-        this.checkStable();
-    };
-    /**
-     * @param {?} hasMacrotasks
-     * @return {?}
-     */
-    NgZone.prototype.setHasMacrotask = function (hasMacrotasks) { this._hasPendingMacrotasks = hasMacrotasks; };
-    /**
-     * @param {?} error
-     * @return {?}
-     */
-    NgZone.prototype.triggerError = function (error) { this._onErrorEvents.emit(error); };
+    NgZone.prototype.runOutsideAngular = function (fn) { return (((this)))._outer.run(fn); };
     return NgZone;
 }());
+/**
+ * @param {?} zone
+ * @return {?}
+ */
+function checkStable(zone) {
+    if (zone._nesting == 0 && !zone.hasPendingMicrotasks && !zone.isStable) {
+        try {
+            zone._nesting++;
+            zone.onMicrotaskEmpty.emit(null);
+        }
+        finally {
+            zone._nesting--;
+            if (!zone.hasPendingMicrotasks) {
+                try {
+                    zone.runOutsideAngular(function () { return zone.onStable.emit(null); });
+                }
+                finally {
+                    zone.isStable = true;
+                }
+            }
+        }
+    }
+}
+/**
+ * @param {?} zone
+ * @return {?}
+ */
+function forkInnerZoneWithAngularBehavior(zone) {
+    zone._inner = zone._inner.fork({
+        name: 'angular',
+        properties: /** @type {?} */ ({ 'isAngularZone': true }),
+        onInvokeTask: function (delegate, current, target, task, applyThis, applyArgs) {
+            try {
+                onEnter(zone);
+                return delegate.invokeTask(target, task, applyThis, applyArgs);
+            }
+            finally {
+                onLeave(zone);
+            }
+        },
+        onInvoke: function (delegate, current, target, callback, applyThis, applyArgs, source) {
+            try {
+                onEnter(zone);
+                return delegate.invoke(target, callback, applyThis, applyArgs, source);
+            }
+            finally {
+                onLeave(zone);
+            }
+        },
+        onHasTask: function (delegate, current, target, hasTaskState) {
+            delegate.hasTask(target, hasTaskState);
+            if (current === target) {
+                // We are only interested in hasTask events which originate from our zone
+                // (A child hasTask event is not interesting to us)
+                if (hasTaskState.change == 'microTask') {
+                    zone.hasPendingMicrotasks = hasTaskState.microTask;
+                    checkStable(zone);
+                }
+                else if (hasTaskState.change == 'macroTask') {
+                    zone.hasPendingMacrotasks = hasTaskState.macroTask;
+                }
+            }
+        },
+        onHandleError: function (delegate, current, target, error) {
+            delegate.handleError(target, error);
+            zone.onError.emit(error);
+            return false;
+        }
+    });
+}
+/**
+ * @param {?} zone
+ * @return {?}
+ */
+function onEnter(zone) {
+    zone._nesting++;
+    if (zone.isStable) {
+        zone.isStable = false;
+        zone.onUnstable.emit(null);
+    }
+}
+/**
+ * @param {?} zone
+ * @return {?}
+ */
+function onLeave(zone) {
+    zone._nesting--;
+    checkStable(zone);
+}
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -44181,10 +44148,10 @@ var DefaultIterableDiffer = (function () {
         // The previous record after which we will append the current one.
         var /** @type {?} */ previousRecord;
         if (record === null) {
-            previousRecord = ((this._itTail));
+            previousRecord = this._itTail;
         }
         else {
-            previousRecord = ((record._prev));
+            previousRecord = record._prev;
             // Remove the record from the collection since we know it does not match the item.
             this._remove(record);
         }
@@ -44622,13 +44589,13 @@ var _DuplicateItemRecordList = (function () {
     };
     /**
      * @param {?} trackById
-     * @param {?} afterIndex
+     * @param {?} atOrAfterIndex
      * @return {?}
      */
-    _DuplicateItemRecordList.prototype.get = function (trackById, afterIndex) {
+    _DuplicateItemRecordList.prototype.get = function (trackById, atOrAfterIndex) {
         var /** @type {?} */ record;
         for (record = this._head; record !== null; record = record._nextDup) {
-            if ((afterIndex === null || afterIndex < ((record.currentIndex))) &&
+            if ((atOrAfterIndex === null || atOrAfterIndex <= ((record.currentIndex))) &&
                 looseIdentical(record.trackById, trackById)) {
                 return record;
             }
@@ -44688,18 +44655,18 @@ var _DuplicateMap = (function () {
     };
     /**
      * Retrieve the `value` using key. Because the IterableChangeRecord_ value may be one which we
-     * have already iterated over, we use the afterIndex to pretend it is not there.
+     * have already iterated over, we use the `atOrAfterIndex` to pretend it is not there.
      *
      * Use case: `[a, b, c, a, a]` if we are at index `3` which is the second `a` then asking if we
-     * have any more `a`s needs to return the last `a` not the first or second.
+     * have any more `a`s needs to return the second `a`.
      * @param {?} trackById
-     * @param {?} afterIndex
+     * @param {?} atOrAfterIndex
      * @return {?}
      */
-    _DuplicateMap.prototype.get = function (trackById, afterIndex) {
+    _DuplicateMap.prototype.get = function (trackById, atOrAfterIndex) {
         var /** @type {?} */ key = trackById;
         var /** @type {?} */ recordList = this.map.get(key);
-        return recordList ? recordList.get(trackById, afterIndex) : null;
+        return recordList ? recordList.get(trackById, atOrAfterIndex) : null;
     };
     /**
      * Removes a {\@link IterableChangeRecord_} from the list of duplicates.
@@ -48695,10 +48662,18 @@ function pureArrayDef(argCount) {
     return _pureExpressionDef(32 /* TypePureArray */, new Array(argCount));
 }
 /**
- * @param {?} propertyNames
+ * @param {?} propToIndex
  * @return {?}
  */
-function pureObjectDef(propertyNames) {
+function pureObjectDef(propToIndex) {
+    var /** @type {?} */ keys = Object.keys(propToIndex);
+    var /** @type {?} */ nbKeys = keys.length;
+    var /** @type {?} */ propertyNames = new Array(nbKeys);
+    for (var /** @type {?} */ i = 0; i < nbKeys; i++) {
+        var /** @type {?} */ key = keys[i];
+        var /** @type {?} */ index = propToIndex[key];
+        propertyNames[index] = key;
+    }
     return _pureExpressionDef(64 /* TypePureObject */, propertyNames);
 }
 /**
@@ -52039,7 +52014,7 @@ function transition$$1(stateChangeExpr, steps) {
 /* unused harmony export ɵr */
 
 /**
- * @license Angular v4.2.5
+ * @license Angular v4.2.6
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -52276,7 +52251,7 @@ function isEmptyInputValue(value) {
  *
  * \@stable
  */
-var NG_VALIDATORS = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* InjectionToken */]('NgValidators');
+var NG_VALIDATORS = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* InjectionToken */]('NgValidators');
 /**
  * Providers for asynchronous validators to be used for {\@link FormControl}s
  * in a form.
@@ -52287,7 +52262,7 @@ var NG_VALIDATORS = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Injec
  *
  * \@stable
  */
-var NG_ASYNC_VALIDATORS = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* InjectionToken */]('NgAsyncValidators');
+var NG_ASYNC_VALIDATORS = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* InjectionToken */]('NgAsyncValidators');
 var EMAIL_REGEXP = /^(?=.{1,254}$)(?=.{1,64}@)[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+(\.[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+)*@[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?(\.[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?)*$/;
 /**
  * Provides a set of validators used by form controls.
@@ -52512,7 +52487,7 @@ function _mergeErrors(arrayOfErrors) {
  * See {\@link DefaultValueAccessor} for how to implement one.
  * \@stable
  */
-var NG_VALUE_ACCESSOR = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* InjectionToken */]('NgValueAccessor');
+var NG_VALUE_ACCESSOR = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* InjectionToken */]('NgValueAccessor');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -52611,7 +52586,7 @@ function _isAndroid() {
  * Turn this mode on if you want form directives to buffer IME input until compositionend
  * \@experimental
  */
-var COMPOSITION_BUFFER_MODE = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* InjectionToken */]('CompositionEventMode');
+var COMPOSITION_BUFFER_MODE = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* InjectionToken */]('CompositionEventMode');
 /**
  * The default accessor for writing a value and listening to changes that is used by the
  * {\@link NgModel}, {\@link FormControlDirective}, and {\@link FormControlName} directives.
@@ -52712,7 +52687,7 @@ DefaultValueAccessor.decorators = [
 DefaultValueAccessor.ctorParameters = function () { return [
     { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* Renderer */], },
     { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["M" /* ElementRef */], },
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [COMPOSITION_BUFFER_MODE,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [COMPOSITION_BUFFER_MODE,] },] },
 ]; };
 /**
  * @license
@@ -56033,8 +56008,8 @@ NgForm.decorators = [
  * @nocollapse
  */
 NgForm.ctorParameters = function () { return [
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
 ]; };
 /**
  * @license
@@ -56155,8 +56130,8 @@ NgModelGroup.decorators = [
  */
 NgModelGroup.ctorParameters = function () { return [
     { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["E" /* SkipSelf */] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
 ]; };
 NgModelGroup.propDecorators = {
     'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["O" /* Input */], args: ['ngModelGroup',] },],
@@ -56436,9 +56411,9 @@ NgModel.decorators = [
  */
 NgModel.ctorParameters = function () { return [
     { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
 ]; };
 NgModel.propDecorators = {
     'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["O" /* Input */] },],
@@ -56647,9 +56622,9 @@ FormControlDirective.decorators = [
  * @nocollapse
  */
 FormControlDirective.ctorParameters = function () { return [
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
 ]; };
 FormControlDirective.propDecorators = {
     'form': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["O" /* Input */], args: ['formControl',] },],
@@ -56911,8 +56886,8 @@ FormGroupDirective.decorators = [
  * @nocollapse
  */
 FormGroupDirective.ctorParameters = function () { return [
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
 ]; };
 FormGroupDirective.propDecorators = {
     'form': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["O" /* Input */], args: ['formGroup',] },],
@@ -57018,8 +56993,8 @@ FormGroupName.decorators = [
  */
 FormGroupName.ctorParameters = function () { return [
     { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["E" /* SkipSelf */] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
 ]; };
 FormGroupName.propDecorators = {
     'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["O" /* Input */], args: ['formGroupName',] },],
@@ -57166,8 +57141,8 @@ FormArrayName.decorators = [
  */
 FormArrayName.ctorParameters = function () { return [
     { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["E" /* SkipSelf */] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
 ]; };
 FormArrayName.propDecorators = {
     'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["O" /* Input */], args: ['formArrayName',] },],
@@ -57373,9 +57348,9 @@ FormControlName.decorators = [
  */
 FormControlName.ctorParameters = function () { return [
     { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["E" /* SkipSelf */] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["f" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
 ]; };
 FormControlName.propDecorators = {
     'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["O" /* Input */], args: ['formControlName',] },],
@@ -57888,7 +57863,7 @@ FormBuilder.ctorParameters = function () { return []; };
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Version */]('4.2.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Version */]('4.2.6');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -58101,7 +58076,7 @@ ReactiveFormsModule.ctorParameters = function () { return []; };
 /* unused harmony export ɵd */
 
 /**
- * @license Angular v4.2.5
+ * @license Angular v4.2.6
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -60256,7 +60231,7 @@ JsonpModule.ctorParameters = function () { return []; };
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Version */]('4.2.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Version */]('4.2.6');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -60302,7 +60277,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Version */]
 /* unused harmony export ɵResourceLoaderImpl */
 
 /**
- * @license Angular v4.2.5
+ * @license Angular v4.2.6
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -60377,7 +60352,7 @@ var INTERNAL_BROWSER_DYNAMIC_PLATFORM_PROVIDERS = [
         useValue: { providers: [{ provide: __WEBPACK_IMPORTED_MODULE_1__angular_compiler__["a" /* ResourceLoader */], useClass: ResourceLoaderImpl }] },
         multi: true
     },
-    { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["u" /* PLATFORM_ID */], useValue: __WEBPACK_IMPORTED_MODULE_3__angular_common__["b" /* ɵPLATFORM_BROWSER_ID */] },
+    { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["u" /* PLATFORM_ID */], useValue: __WEBPACK_IMPORTED_MODULE_3__angular_common__["c" /* ɵPLATFORM_BROWSER_ID */] },
 ];
 /**
  * @license
@@ -60435,7 +60410,7 @@ var CachedResourceLoader = (function (_super) {
 /**
  * @stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["d" /* Version */]('4.2.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["d" /* Version */]('4.2.6');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -60523,7 +60498,7 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 /* unused harmony export ɵe */
 
 /**
- * @license Angular v4.2.5
+ * @license Angular v4.2.6
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -62340,9 +62315,9 @@ function parseCookieValue(cookieStr, name) {
  * Note: Document might not be available in the Application Context when Application and Rendering
  * Contexts are not the same (e.g. when running the application into a Web Worker).
  *
- * \@stable
+ * \@deprecated, import from `\@angular/common` instead.
  */
-var DOCUMENT = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* InjectionToken */]('DocumentToken');
+var DOCUMENT$1 = __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* DOCUMENT */];
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -62477,7 +62452,7 @@ var BrowserPlatformLocation = (function (_super) {
      */
     BrowserPlatformLocation.prototype.back = function () { this._history.back(); };
     return BrowserPlatformLocation;
-}(__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* PlatformLocation */]));
+}(__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* PlatformLocation */]));
 BrowserPlatformLocation.decorators = [
     { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["c" /* Injectable */] },
 ];
@@ -62485,7 +62460,7 @@ BrowserPlatformLocation.decorators = [
  * @nocollapse
  */
 BrowserPlatformLocation.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [DOCUMENT,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */], args: [DOCUMENT$1,] },] },
 ]; };
 /**
  * @license
@@ -62641,7 +62616,7 @@ Meta.decorators = [
  * @nocollapse
  */
 Meta.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [DOCUMENT,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */], args: [DOCUMENT$1,] },] },
 ]; };
 /**
  * @license
@@ -62654,7 +62629,7 @@ Meta.ctorParameters = function () { return [
  * An id that identifies a particular application being bootstrapped, that should
  * match across the client/server boundary.
  */
-var TRANSITION_ID = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* InjectionToken */]('TRANSITION_ID');
+var TRANSITION_ID = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* InjectionToken */]('TRANSITION_ID');
 /**
  * @param {?} transitionId
  * @param {?} document
@@ -62677,7 +62652,7 @@ var SERVER_TRANSITION_PROVIDERS = [
     {
         provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["i" /* APP_INITIALIZER */],
         useFactory: appInitializerFactory,
-        deps: [TRANSITION_ID, DOCUMENT, __WEBPACK_IMPORTED_MODULE_2__angular_core__["j" /* Injector */]],
+        deps: [TRANSITION_ID, DOCUMENT$1, __WEBPACK_IMPORTED_MODULE_2__angular_core__["j" /* Injector */]],
         multi: true
     },
 ];
@@ -62798,7 +62773,7 @@ Title.decorators = [
  * @nocollapse
  */
 Title.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [DOCUMENT,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */], args: [DOCUMENT$1,] },] },
 ]; };
 /**
  * @license
@@ -62910,7 +62885,7 @@ var ELEMENT_PROBE_PROVIDERS = [
 /**
  * \@stable
  */
-var EVENT_MANAGER_PLUGINS = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* InjectionToken */]('EventManagerPlugins');
+var EVENT_MANAGER_PLUGINS = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* InjectionToken */]('EventManagerPlugins');
 /**
  * \@stable
  */
@@ -62979,7 +62954,7 @@ EventManager.decorators = [
  * @nocollapse
  */
 EventManager.ctorParameters = function () { return [
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [EVENT_MANAGER_PLUGINS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */], args: [EVENT_MANAGER_PLUGINS,] },] },
     { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* NgZone */], },
 ]; };
 /**
@@ -63129,7 +63104,7 @@ DomSharedStylesHost.decorators = [
  * @nocollapse
  */
 DomSharedStylesHost.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [DOCUMENT,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */], args: [DOCUMENT$1,] },] },
 ]; };
 /**
  * @license
@@ -63608,7 +63583,7 @@ DomEventsPlugin.decorators = [
  * @nocollapse
  */
 DomEventsPlugin.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [DOCUMENT,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */], args: [DOCUMENT$1,] },] },
 ]; };
 /**
  * @license
@@ -63660,7 +63635,7 @@ var EVENT_NAMES = {
  *
  * \@experimental
  */
-var HAMMER_GESTURE_CONFIG = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* InjectionToken */]('HammerGestureConfig');
+var HAMMER_GESTURE_CONFIG = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* InjectionToken */]('HammerGestureConfig');
 /**
  * \@experimental
  */
@@ -63749,8 +63724,8 @@ HammerGesturesPlugin.decorators = [
  * @nocollapse
  */
 HammerGesturesPlugin.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [DOCUMENT,] },] },
-    { type: HammerGestureConfig, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [HAMMER_GESTURE_CONFIG,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */], args: [DOCUMENT$1,] },] },
+    { type: HammerGestureConfig, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */], args: [HAMMER_GESTURE_CONFIG,] },] },
 ]; };
 /**
  * @license
@@ -63885,7 +63860,7 @@ KeyEventsPlugin.decorators = [
  * @nocollapse
  */
 KeyEventsPlugin.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [DOCUMENT,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */], args: [DOCUMENT$1,] },] },
 ]; };
 /**
  * @license
@@ -64045,7 +64020,7 @@ var HTML_ATTRS = tagSet('abbr,accesskey,align,alt,autoplay,axis,bgcolor,border,c
     'ismap,itemscope,itemprop,kind,label,lang,language,loop,media,muted,nohref,nowrap,open,preload,rel,rev,role,rows,rowspan,rules,' +
     'scope,scrolling,shape,size,sizes,span,srclang,start,summary,tabindex,target,title,translate,type,usemap,' +
     'valign,value,vspace,width');
-// NB: This currently conciously doesn't support SVG. SVG sanitization has had several security
+// NB: This currently consciously doesn't support SVG. SVG sanitization has had several security
 // issues in the past, so it seems safer to leave it out if possible. If support for binding SVG via
 // innerHTML is required, SVG attributes should be added here.
 // NB: Sanitization does not allow <form> elements or other active elements (<button> etc). Those
@@ -64559,7 +64534,7 @@ DomSanitizerImpl.decorators = [
  * @nocollapse
  */
 DomSanitizerImpl.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [DOCUMENT,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */], args: [DOCUMENT$1,] },] },
 ]; };
 /**
  * @abstract
@@ -64649,10 +64624,10 @@ var SafeResourceUrlImpl = (function (_super) {
  * found in the LICENSE file at https://angular.io/license
  */
 var INTERNAL_BROWSER_PLATFORM_PROVIDERS = [
-    { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["u" /* PLATFORM_ID */], useValue: __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* ɵPLATFORM_BROWSER_ID */] },
+    { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["u" /* PLATFORM_ID */], useValue: __WEBPACK_IMPORTED_MODULE_1__angular_common__["c" /* ɵPLATFORM_BROWSER_ID */] },
     { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["v" /* PLATFORM_INITIALIZER */], useValue: initDomAdapter, multi: true },
-    { provide: __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* PlatformLocation */], useClass: BrowserPlatformLocation },
-    { provide: DOCUMENT, useFactory: _document, deps: [] },
+    { provide: __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* PlatformLocation */], useClass: BrowserPlatformLocation },
+    { provide: DOCUMENT$1, useFactory: _document, deps: [] },
 ];
 /**
  * \@security Replacing built-in sanitization providers exposes the application to XSS risks.
@@ -64741,7 +64716,7 @@ BrowserModule.decorators = [
                     Meta,
                     Title,
                 ],
-                exports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["c" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["D" /* ApplicationModule */]]
+                exports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["d" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["D" /* ApplicationModule */]]
             },] },
 ];
 /**
@@ -64947,7 +64922,7 @@ var By = (function () {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["d" /* Version */]('4.2.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["d" /* Version */]('4.2.6');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -65074,7 +65049,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["d" /* Version */]
 /* unused harmony export ɵl */
 
 /**
- * @license Angular v4.2.5
+ * @license Angular v4.2.6
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -65799,7 +65774,7 @@ var UrlSegmentGroup = (function () {
         forEach(children, function (v, k) { return v.parent = _this; });
     }
     /**
-     * Wether the segment has child segments
+     * Whether the segment has child segments
      * @return {?}
      */
     UrlSegmentGroup.prototype.hasChildren = function () { return this.numberOfChildren > 0; };
@@ -66024,11 +65999,25 @@ function serializeSegment(segment, root) {
     }
 }
 /**
+ * This method is intended for encoding *key* or *value* parts of query component. We need a custom
+ * method because encodeURIComponent is too aggressive and encodes stuff that doesn't have to be
+ * encoded per http://tools.ietf.org/html/rfc3986:
+ *    query         = *( pchar / "/" / "?" )
+ *    pchar         = unreserved / pct-encoded / sub-delims / ":" / "\@"
+ *    unreserved    = ALPHA / DIGIT / "-" / "." / "_" / "~"
+ *    pct-encoded   = "%" HEXDIG HEXDIG
+ *    sub-delims    = "!" / "$" / "&" / "'" / "(" / ")"
+ *                     / "*" / "+" / "," / ";" / "="
  * @param {?} s
  * @return {?}
  */
 function encode(s) {
-    return encodeURIComponent(s);
+    return encodeURIComponent(s)
+        .replace(/%40/g, '@')
+        .replace(/%3A/gi, ':')
+        .replace(/%24/g, '$')
+        .replace(/%2C/gi, ',')
+        .replace(/%3B/gi, ';');
 }
 /**
  * @param {?} s
@@ -68434,7 +68423,7 @@ var DefaultRouteReuseStrategy = (function () {
  * \@docsNotRequired
  * \@experimental
  */
-var ROUTES = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* InjectionToken */]('ROUTES');
+var ROUTES = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* InjectionToken */]('ROUTES');
 var RouterConfigLoader = (function () {
     /**
      * @param {?} loader
@@ -70029,7 +70018,7 @@ RouterLinkWithHref.decorators = [
 RouterLinkWithHref.ctorParameters = function () { return [
     { type: Router, },
     { type: ActivatedRoute, },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_common__["d" /* LocationStrategy */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_common__["e" /* LocationStrategy */], },
 ]; };
 RouterLinkWithHref.propDecorators = {
     'target': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_2" /* HostBinding */], args: ['attr.target',] }, { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["O" /* Input */] },],
@@ -70751,19 +70740,19 @@ var ROUTER_DIRECTIVES = [RouterOutlet, RouterLink, RouterLinkWithHref, RouterLin
  * \@whatItDoes Is used in DI to configure the router.
  * \@stable
  */
-var ROUTER_CONFIGURATION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* InjectionToken */]('ROUTER_CONFIGURATION');
+var ROUTER_CONFIGURATION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* InjectionToken */]('ROUTER_CONFIGURATION');
 /**
  * \@docsNotRequired
  */
-var ROUTER_FORROOT_GUARD = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* InjectionToken */]('ROUTER_FORROOT_GUARD');
+var ROUTER_FORROOT_GUARD = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* InjectionToken */]('ROUTER_FORROOT_GUARD');
 var ROUTER_PROVIDERS = [
-    __WEBPACK_IMPORTED_MODULE_1__angular_common__["e" /* Location */],
+    __WEBPACK_IMPORTED_MODULE_1__angular_common__["f" /* Location */],
     { provide: UrlSerializer, useClass: DefaultUrlSerializer },
     {
         provide: Router,
         useFactory: setupRouter,
         deps: [
-            __WEBPACK_IMPORTED_MODULE_2__angular_core__["l" /* ApplicationRef */], UrlSerializer, ChildrenOutletContexts, __WEBPACK_IMPORTED_MODULE_1__angular_common__["e" /* Location */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["j" /* Injector */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_core__["l" /* ApplicationRef */], UrlSerializer, ChildrenOutletContexts, __WEBPACK_IMPORTED_MODULE_1__angular_common__["f" /* Location */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["j" /* Injector */],
             __WEBPACK_IMPORTED_MODULE_2__angular_core__["_5" /* NgModuleFactoryLoader */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["_6" /* Compiler */], ROUTES, ROUTER_CONFIGURATION,
             [UrlHandlingStrategy, new __WEBPACK_IMPORTED_MODULE_2__angular_core__["o" /* Optional */]()], [RouteReuseStrategy, new __WEBPACK_IMPORTED_MODULE_2__angular_core__["o" /* Optional */]()]
         ]
@@ -70867,10 +70856,10 @@ var RouterModule = (function () {
                 },
                 { provide: ROUTER_CONFIGURATION, useValue: config ? config : {} },
                 {
-                    provide: __WEBPACK_IMPORTED_MODULE_1__angular_common__["d" /* LocationStrategy */],
+                    provide: __WEBPACK_IMPORTED_MODULE_1__angular_common__["e" /* LocationStrategy */],
                     useFactory: provideLocationStrategy,
                     deps: [
-                        __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* PlatformLocation */], [new __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */](__WEBPACK_IMPORTED_MODULE_1__angular_common__["f" /* APP_BASE_HREF */]), new __WEBPACK_IMPORTED_MODULE_2__angular_core__["o" /* Optional */]()], ROUTER_CONFIGURATION
+                        __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* PlatformLocation */], [new __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */](__WEBPACK_IMPORTED_MODULE_1__angular_common__["g" /* APP_BASE_HREF */]), new __WEBPACK_IMPORTED_MODULE_2__angular_core__["o" /* Optional */]()], ROUTER_CONFIGURATION
                     ]
                 },
                 {
@@ -70900,7 +70889,7 @@ RouterModule.decorators = [
  * @nocollapse
  */
 RouterModule.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [ROUTER_FORROOT_GUARD,] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["o" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* Inject */], args: [ROUTER_FORROOT_GUARD,] },] },
     { type: Router, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["o" /* Optional */] },] },
 ]; };
 /**
@@ -70911,8 +70900,8 @@ RouterModule.ctorParameters = function () { return [
  */
 function provideLocationStrategy(platformLocationStrategy, baseHref, options) {
     if (options === void 0) { options = {}; }
-    return options.useHash ? new __WEBPACK_IMPORTED_MODULE_1__angular_common__["g" /* HashLocationStrategy */](platformLocationStrategy, baseHref) :
-        new __WEBPACK_IMPORTED_MODULE_1__angular_common__["h" /* PathLocationStrategy */](platformLocationStrategy, baseHref);
+    return options.useHash ? new __WEBPACK_IMPORTED_MODULE_1__angular_common__["h" /* HashLocationStrategy */](platformLocationStrategy, baseHref) :
+        new __WEBPACK_IMPORTED_MODULE_1__angular_common__["i" /* PathLocationStrategy */](platformLocationStrategy, baseHref);
 }
 /**
  * @param {?} router
@@ -71016,7 +71005,7 @@ var RouterInitializer = (function () {
      */
     RouterInitializer.prototype.appInitializer = function () {
         var _this = this;
-        var /** @type {?} */ p = this.injector.get(__WEBPACK_IMPORTED_MODULE_1__angular_common__["i" /* LOCATION_INITIALIZED */], Promise.resolve(null));
+        var /** @type {?} */ p = this.injector.get(__WEBPACK_IMPORTED_MODULE_1__angular_common__["j" /* LOCATION_INITIALIZED */], Promise.resolve(null));
         return p.then(function () {
             var /** @type {?} */ resolve = ((null));
             var /** @type {?} */ res = new Promise(function (r) { return resolve = r; });
@@ -71118,7 +71107,7 @@ function getBootstrapListener(r) {
  *
  * \@experimental
  */
-var ROUTER_INITIALIZER = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["f" /* InjectionToken */]('Router Initializer');
+var ROUTER_INITIALIZER = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* InjectionToken */]('Router Initializer');
 /**
  * @return {?}
  */
@@ -71150,7 +71139,7 @@ function provideRouterInitializer() {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["d" /* Version */]('4.2.5');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["d" /* Version */]('4.2.6');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
