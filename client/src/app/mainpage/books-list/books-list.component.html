@@ -1,3 +1,59 @@
-<p>
-  books-list works!
-</p>
+
+<div class="container">
+<h3>Books</h3>
+<table>
+  <thead>
+  <tr style="background-color: #795548; color: white">
+    <th style="width: 5%; border: 1px solid">№</th>
+    <th style="width: 15%; border: 1px solid">Author</th>
+    <th style="width: 30%; border: 1px solid">Title</th>
+    <th style="width: 20%; border: 1px solid">BookRating</th>
+    <th style="width: 20%; border: 1px solid">Status</th>
+    <th style="width: 10%; border: 1px solid">Actions</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let book of books; let i = index" [attr.data-index]="i"  style="border: 1px solid darkgray">
+    <th>{{i+1}}</th>
+    <td (click)="open(book)">{{book.author}}</td>
+    <td (click)="open(book)">{{book.title}}</td>
+    <td><i *ngFor="let star of [1,2,3]" class="tiny material-icons">grade</i></td>
+    <td>
+      <div class="switch">
+        <label>
+          Off
+          <input [(ngModel)]="book.status" type="checkbox">
+          <span class="lever"></span>
+          On
+        </label>
+      </div>
+    </td>
+    <td>
+      <a [routerLink]="['../edit',book._id]" class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">mode_edit</i></a>
+      <a (click)="deleteBook(book._id)" class="btn-floating right btn-small waves-effect waves-light red"><i class="material-icons">delete</i></a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+  <div class="col s8 offset-s2" *ngIf="showBook">
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="../../../img/noimg.jpg">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h3>{{showBook.author}} - {{showBook.title}}</h3>
+          <p>{{showBook.rating}}</p>
+          <p>{{showBook.description}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Download</a>
+          <a (click)="showBook = null" class="right">Close</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

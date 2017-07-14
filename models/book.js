@@ -1,14 +1,29 @@
 var mongoose = require('mongoose');
 
 var BookSchema = new mongoose.Schema({
-    name : {
+    title : {
         type : String,
-        unique: true,
         required : true
     },
     description : {
         type: String,
         required : true
+    },
+    author : {
+        type: String,
+        required: true
+    },
+    status : {
+        type: Boolean,
+        required: true
+    },
+    rating : {
+        type: Number,
+        required: false
+    },
+    url : {
+        type: String,
+        required: false
     }
 });
 

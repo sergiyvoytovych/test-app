@@ -20,6 +20,7 @@ config.setConfig();
 mongoose.connect(process.env.MONGOOSE_CONNECT);
 
 
+
 // for cross port acess
 app.use(function (req, res, next) {
 
@@ -27,7 +28,7 @@ app.use(function (req, res, next) {
 
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
 
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, token');
 
     res.setHeader('Access-Control-Allow-Credentials', true);
 
@@ -36,9 +37,6 @@ app.use(function (req, res, next) {
 
 
 app.use(express.static(path.resolve(__dirname, 'client/dist')));
-app.get('/*', function (req,res) {
-    res.redirect('/');
-});
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -47,8 +45,8 @@ app.use('/secure-api', secureRoutes);
 
 //auth middlware
 secureRoutes.use(function (req,res,next) {
-    var token = req.body.token || req.header('token')
-
+    var token = req.body.token || req.header('token');
+    
     if (token) {
         jwt.verify(token, process.env.SECRET, function (err, decode){
             if (err) {
@@ -67,7 +65,11 @@ app.post('/api/createuser', authenticateController.createUser);
 app.post('/api/authenticate', authenticateController.authenticate);
 
 app.get('/api/getbooks', dataController.getBooks);
-secureRoutes.post('/postbook', dataController.postBook)
+app.get('/api/getbook/:id', dataController.getBook);
+secureRoutes.put('/updatebook/:id', dataController.updateBook);
+secureRoutes.post('/postbook', dataController.postBook);
+secureRoutes.delete('/deletebook/:id',dataController.deleteBook);
+app.post('/api/uploadbook', dataController.uploadBook);
 
 
 

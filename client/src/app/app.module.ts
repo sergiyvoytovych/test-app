@@ -12,13 +12,17 @@ import { AppComponent } from './app.component';
 import { AuthtentificateComponent } from './authtentificate/authtentificate.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { BooksListComponent } from './mainpage/books-list/books-list.component';
+import { AddbookComponent } from './mainpage/addbook/addbook.component';
+import { EditbookComponent } from './mainpage/editbook/editbook.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthtentificateComponent,
     MainpageComponent,
-    BooksListComponent
+    BooksListComponent,
+    AddbookComponent,
+    EditbookComponent
   ],
   imports: [
     BrowserModule,
