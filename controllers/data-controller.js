@@ -4,7 +4,8 @@ var ObjectID = require('mongodb').ObjectID;
 
 
 module.exports.getBooks = function (req, res) {
-    Book.find({}, function (err,books) {
+    var creator = req.header('userid');
+    Book.find({creatorid : creator}, function (err,books) {
         if (err){
             res.status(500);
         }
@@ -22,6 +23,7 @@ module.exports.postBook = function (req,res) {
     book.status = req.body.status;
     book.rating = 3;
     book.url = null;
+    book.creatorid = req.body.creatorid;
 
     book.save(function (err) {
         if (err) {

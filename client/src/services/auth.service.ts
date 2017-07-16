@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Http, Response, RequestOptions, RequestMethod, Headers } from '@angular/http';
 import {Observable} from "rxjs";
 
 @Injectable()
@@ -22,6 +22,17 @@ export class AuthService {
   }
 
   logout(): void {
-    localStorage.removeItem('token');
+    localStorage.clear();
+  }
+
+  verify(): Observable<Response>{
+    return this.http.get('http://localhost:3000/api/verify', this.authHeader());
+  }
+
+  authHeader() : RequestOptions{
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('token', localStorage.token);
+    return new RequestOptions({headers : headers});
   }
 }

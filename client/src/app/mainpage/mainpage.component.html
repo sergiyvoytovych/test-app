@@ -2,6 +2,7 @@
   <div class="nav-wrapper">
       <a href="#" class="brand-logo">BookChest</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <span class="left" style="color: #b3d4fc">user: {{username}}</span>
         <li><a routerLink="bookslist">Books</a></li>
         <li><a routerLink="addbook">Add book</a></li>
         <li><a (click)="logout()">Logout</a></li>

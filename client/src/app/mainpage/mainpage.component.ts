@@ -9,17 +9,32 @@ import {AuthService} from '../../services/auth.service';
 })
 export class MainpageComponent implements OnInit {
 
+  username: String;
+
   constructor(private auth : AuthService, private router : Router) { }
 
   ngOnInit() {
-    if(!localStorage.token){
-      this.router.navigate(["auth"]);
-    }
+    this.verify();
   }
 
   logout(){
     this.auth.logout();
     this.router.navigate(["auth"]);
+  }
+
+  verify(){
+    this.auth.verify()
+      .subscribe( (response) =>{
+        if(response.json().succsess == true) {
+          localStorage.setItem('userid', response.json().msg._doc._id);
+          localStorage.setItem('username', response.json().msg._doc.email);
+          this.username = localStorage.username;
+          this.router.navigate(["home","bookslist"]);
+        } else {
+          localStorage.clear();
+          this.router.navigate(["auth"]);
+        }
+      })
   }
 
 }

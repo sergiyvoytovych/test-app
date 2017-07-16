@@ -41,3 +41,14 @@ module.exports.createUser = function (req,res) {
         }
     })
 }
+
+module.exports.verifyUser = function (req,res) {
+    var token = req.header('token');
+    jwt.verify(token, process.env.SECRET, function(err, decoded) {
+        if (err) {
+            res.json({succsess: false, msg: err});
+        } else {
+            res.json({succsess: true, msg: decoded});
+        }
+    });
+}

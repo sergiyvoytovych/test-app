@@ -24,6 +24,10 @@ var BookSchema = new mongoose.Schema({
     url : {
         type: String,
         required: false
+    },
+    creatorid: {
+        type: String,
+        required: true
     }
 });
 

@@ -28,7 +28,7 @@ app.use(function (req, res, next) {
 
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
 
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, token');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, token, userid');
 
     res.setHeader('Access-Control-Allow-Credentials', true);
 
@@ -63,9 +63,11 @@ secureRoutes.use(function (req,res,next) {
 
 app.post('/api/createuser', authenticateController.createUser);
 app.post('/api/authenticate', authenticateController.authenticate);
+app.get('/api/verify', authenticateController.verifyUser);
 
-app.get('/api/getbooks', dataController.getBooks);
-app.get('/api/getbook/:id', dataController.getBook);
+
+secureRoutes.get('/getbooks', dataController.getBooks);
+secureRoutes.get('/getbook/:id', dataController.getBook);
 secureRoutes.put('/updatebook/:id', dataController.updateBook);
 secureRoutes.post('/postbook', dataController.postBook);
 secureRoutes.delete('/deletebook/:id',dataController.deleteBook);

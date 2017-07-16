@@ -5,10 +5,25 @@
   <thead>
   <tr style="background-color: #795548; color: white">
     <th style="width: 5%; border: 1px solid">№</th>
-    <th style="width: 15%; border: 1px solid">Author</th>
-    <th style="width: 30%; border: 1px solid">Title</th>
-    <th style="width: 20%; border: 1px solid">BookRating</th>
-    <th style="width: 20%; border: 1px solid">Status</th>
+    <th style="width: 15%; border: 1px solid">
+      <a (click)="sortByAuthor()" class="pointer">
+        <span *ngIf="authorSortTriger">⇧</span>
+        <span *ngIf="!authorSortTriger && authorSortTriger != null">⇩ </span>Author
+      </a>
+    </th>
+    <th style="width: 30%; border: 1px solid">
+      <a (click)="sortByTitle()" class="pointer">
+        <span *ngIf="titleSortTriger">⇧</span>
+        <span *ngIf="!titleSortTriger && titleSortTriger != null">⇩ </span>Title
+      </a>
+    </th>
+    <th style="width: 20%; border: 1px solid">Rating</th>
+    <th style="width: 20%; border: 1px solid">
+      <a (click)="sortByStatus()" class="pointer">
+        <span *ngIf="statusSortTriger">⇩</span>
+        <span *ngIf="!statusSortTriger && statusSortTriger != null">⇧ </span>Status
+      </a>
+    </th>
     <th style="width: 10%; border: 1px solid">Actions</th>
   </tr>
   </thead>
@@ -16,8 +31,8 @@
   <tbody>
   <tr *ngFor="let book of books; let i = index" [attr.data-index]="i"  style="border: 1px solid darkgray">
     <th>{{i+1}}</th>
-    <td (click)="open(book)">{{book.author}}</td>
-    <td (click)="open(book)">{{book.title}}</td>
+    <td (click)="open(book)" class="pointer">{{book.author}}</td>
+    <td (click)="open(book)" class="pointer">{{book.title}}</td>
     <td><i *ngFor="let star of [1,2,3]" class="tiny material-icons">grade</i></td>
     <td>
       <div class="switch">
