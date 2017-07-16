@@ -1,0 +1,47 @@
+<div class="row container">
+  <h2>Edit your book</h2>
+  <form class="col s12">
+    <div class="row col s6 offset-s3">
+      <div class="col s12">
+        <div class="input-field col s12">
+          <input type="text" id="author" class="form-control"
+                 required minlength="4" maxlength="24"
+                 name="author" [(ngModel)]="book.author"
+                 #author="ngModel" >
+          <label for="author" data-error="wrong" style="transform: translateY(-140%);" data-success="right">Author</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="text" id="title" class="form-control"
+                 required minlength="4" maxlength="24"
+                 name="title" [(ngModel)]="book.title"
+                 #title="ngModel">
+          <label  for="title" data-error="wrong" style="transform: translateY(-140%);" data-success="right">Title</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea  type="text" id="description" class="form-control"
+                     required minlength="4" maxlength="400"
+                     name="description" [(ngModel)]="book.description"
+                     #description="ngModel" class="materialize-textarea"></textarea>
+          <label for="description" style="transform: translateY(-140%);">Description</label>
+        </div>
+        <a href="/">Select file to uppload</a>
+        <div class="row">
+          <div class="input-field col s4">
+            <select id="power" class="form-control browser-default"
+                    name="power"
+                    [(ngModel)]="book.status" required
+                    #power="ngModel" >
+              <option value="" disabled selected>Status</option>
+              <option *ngFor="let p of statuses" [value]="p">{{p}}</option>
+            </select>
+          </div>
+          <div class="input-field col s6 offset-s2">
+            <button class="btn waves-effect waves-light" type="submit" (click)="updateBook()" name="action">Change
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

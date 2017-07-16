@@ -1,17 +1,26 @@
 var Book = require('../models/book');
 var DIR = './uploads/';
 var ObjectID = require('mongodb').ObjectID;
+var jwt = require('jsonwebtoken');
 
 
 module.exports.getBooks = function (req, res) {
-    var creator = req.header('userid');
-    Book.find({creatorid : creator}, function (err,books) {
-        if (err){
-            res.status(500);
+    var creator;
+    var token = req.header('token');
+    jwt.verify(token, process.env.SECRET, function(err, decoded) {
+        if (err) {
+            console.log(err);
+        } else {
+            creator = decoded._doc._id
+            Book.find({creatorid : creator}, function (err,books) {
+                if (err){
+                    res.status(500);
+                }
+
+                res.json({data: books})
+
+            });
         }
-
-        res.json({data: books})
-
     });
 };
 

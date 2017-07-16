@@ -1,0 +1,47 @@
+<div class="row container">
+  <h2>Add your book</h2>
+  <form class="col s12">
+    <div class="row col s6 offset-s3">
+      <a href="/">Select file to uppload</a>
+      <div class="col s12">
+        <div class="input-field col s12">
+          <input type="text" id="author" class="form-control"
+                 required minlength="4" maxlength="24"
+                 name="name" [(ngModel)]="book.author"
+                 #author="ngModel" >
+          <label for="author" data-error="wrong" data-success="right">Author</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="text" id="title" class="form-control"
+                 required minlength="4" maxlength="24"
+                 name="name" [(ngModel)]="book.title"
+                 #title="ngModel">
+          <label for="title" data-error="wrong" data-success="right">Title</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea  type="text" id="description" class="form-control"
+                     required minlength="4" maxlength="400"
+                     name="name" [(ngModel)]="book.description"
+                     #author="ngModel" class="materialize-textarea"></textarea>
+          <label for="description">Description</label>
+        </div>
+        <div class="row">
+        <div class="input-field col s4">
+          <select id="power" class="form-control browser-default"
+                  name="power"
+                  [(ngModel)]="statusValue" required
+                  #power="ngModel" >
+            <option value="" disabled selected>Status</option>
+            <option *ngFor="let p of statuses" [value]="p">{{p}}</option>
+          </select>
+        </div>
+          <div class="input-field col s6 offset-s2">
+        <button class="btn waves-effect waves-light" type="submit" (click)="submitBook()" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
