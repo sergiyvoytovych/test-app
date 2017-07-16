@@ -33,6 +33,7 @@ module.exports.postBook = function (req,res) {
     book.rating = 3;
     book.url = null;
     book.creatorid = req.body.creatorid;
+    book.url = req.body.url;
 
     book.save(function (err) {
         if (err) {

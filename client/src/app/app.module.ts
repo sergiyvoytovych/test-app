@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import {routes} from './app.routes'
 
 import { MaterializeModule } from "angular2-materialize";
+import { FileSelectDirective, FileDropDirective } from 'ng2-file-upload';
 
 import { AppComponent } from './app.component';
 import { AuthtentificateComponent } from './authtentificate/authtentificate.component';
@@ -22,7 +23,8 @@ import { EditbookComponent } from './mainpage/editbook/editbook.component';
     MainpageComponent,
     BooksListComponent,
     AddbookComponent,
-    EditbookComponent
+    EditbookComponent,
+    FileSelectDirective
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,15 @@
   <h2>Add your book</h2>
   <form class="col s12">
     <div class="row col s6 offset-s3">
-      <a href="/">Select file to uppload</a>
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>File</span>
+            <input type="file" accept="application/pdf,application/djvu" class="form-control" name="single" ng2FileSelect [uploader]="uploader">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
       <div class="col s12">
         <div class="input-field col s12">
           <input type="text" id="author" class="form-control"
@@ -22,21 +30,21 @@
           <textarea  type="text" id="description" class="form-control"
                      required minlength="4" maxlength="400"
                      name="name" [(ngModel)]="book.description"
-                     #author="ngModel" class="materialize-textarea"></textarea>
+                     #description="ngModel" class="materialize-textarea"></textarea>
           <label for="description">Description</label>
         </div>
         <div class="row">
         <div class="input-field col s4">
-          <select id="power" class="form-control browser-default"
-                  name="power"
-                  [(ngModel)]="statusValue" required
-                  #power="ngModel" >
+          <select id="status" class="form-control browser-default"
+                  name="status"
+                  [(ngModel)]="book.status" required
+                  #status="ngModel" >
             <option value="" disabled selected>Status</option>
             <option *ngFor="let p of statuses" [value]="p">{{p}}</option>
           </select>
         </div>
           <div class="input-field col s6 offset-s2">
-        <button class="btn waves-effect waves-light" type="submit" (click)="submitBook()" name="action">Submit
+        <button class="btn waves-effect waves-light" type="submit" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length || !book.author || !book.title || !book.description || !book.status" name="action">Submit
           <i class="material-icons right">send</i>
         </button>
             </div>
