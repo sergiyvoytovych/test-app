@@ -72,7 +72,11 @@
       <div class="card-stacked">
         <div class="card-content">
           <h3>{{showBook.author}} - {{showBook.title}}</h3>
-          <p>{{showBook.rating}}</p>
+          <p>
+            <rating [(ngModel)]="showBook.rating"
+                    [max]="5" [readonly]="true">
+            </rating>
+          </p>
           <p>{{showBook.description}}</p>
         </div>
         <div class="card-action">

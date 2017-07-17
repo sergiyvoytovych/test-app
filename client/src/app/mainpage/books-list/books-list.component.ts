@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BooksService } from '../../../services/books.service';
 import { Book } from '../../../models/book';
-import {RatingModule} from "ng2-rating";
 
 @Component({
   selector: 'app-books-list',
