@@ -49,8 +49,13 @@ export class AuthtentificateComponent implements OnInit {
     if (this.userData.email && this.userData.password && (this.userData.password === this.duplicatePass)){
       this.auth.signin(this.userData)
         .subscribe( (response) => {
+          if (response.json().succsess == false){
+            this.errorMsg = response.json().err;
+          } else {
+          console.log(response);
           this.auth.finishAuth(response.json());
           this.router.navigate(["home"]);
+          }
         } );
     } else {
       this.errorMsg = 'Passwords not match';

@@ -31,7 +31,7 @@ module.exports.createUser = function (req,res) {
 
     user.save(function (err) {
         if (err) {
-            res.status(500).send('User are allredy exist!');
+            res.json({succsess: false, err: 'A user already exist!'});
         }
         else {
             var token = jwt.sign(user, process.env.SECRET,{
