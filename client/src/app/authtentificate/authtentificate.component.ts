@@ -52,6 +52,8 @@ export class AuthtentificateComponent implements OnInit {
           this.auth.finishAuth(response.json());
           this.router.navigate(["home"]);
         } );
+    } else {
+      this.errorMsg = 'Passwords not match';
     }
   }
 
