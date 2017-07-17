@@ -42,7 +42,7 @@ npm start
 
 ## Accounts
 
-You car register new account or use showreal account '''user: test ; password: test'''
+You car register new account or use showreal account (user: test ; password: test)
 
 
 ## Built With
@@ -53,7 +53,7 @@ You car register new account or use showreal account '''user: test ; password: t
 * [JWT](https://jwt.io/)
 
 ## Author
-** Terry Kohanets **
+** Terry Kohanets 
 
 
 
