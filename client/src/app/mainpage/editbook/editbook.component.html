@@ -2,6 +2,15 @@
   <h2>Edit your book</h2>
   <form class="col s12">
     <div class="row col s6 offset-s3">
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>File</span>
+          <input type="file" accept="application/pdf,application/djvu" class="form-control" name="single" ng2FileSelect [uploader]="uploader">
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" placeholder="{{book.url}}" type="text">
+        </div>
+      </div>
       <div class="col s12">
         <div class="input-field col s12">
           <input type="text" id="author" class="form-control"
@@ -24,19 +33,18 @@
                      #description="ngModel" class="materialize-textarea"></textarea>
           <label for="description" style="transform: translateY(-140%);">Description</label>
         </div>
-        <a href="/">Select file to uppload</a>
         <div class="row">
           <div class="input-field col s4">
-            <select id="power" class="form-control browser-default"
-                    name="power"
+            <select id="status" class="form-control browser-default"
+                    name="status"
                     [(ngModel)]="book.status" required
-                    #power="ngModel" >
+                    #status="ngModel" >
               <option value="" disabled selected>Status</option>
               <option *ngFor="let p of statuses" [value]="p">{{p}}</option>
             </select>
           </div>
           <div class="input-field col s6 offset-s2">
-            <button class="btn waves-effect waves-light" type="submit" (click)="updateBook()" name="action">Change
+            <button class="btn waves-effect waves-light" type="submit" (click)="updateBook()" [disabled]="!book.author || !book.title || !book.description" name="action">Change
               <i class="material-icons right">send</i>
             </button>
           </div>

@@ -29,6 +29,7 @@
     "materialize": "^1.0.0",
     "materialize-css": "^0.99.0",
     "ng2-file-upload": "^1.2.1",
+    "ng2-rating": "0.0.7",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },

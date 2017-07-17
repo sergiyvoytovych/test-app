@@ -1,6 +1,10 @@
 
 <div class="container">
 <h3>Books</h3>
+  <div class="input-field col s6 right">
+    <input placeholder="Search" id="search" [(ngModel)]="tosearch" (keyup)="search()" type="text" class="validate">
+  </div>
+  <p class="col s12 right" style="margin:25px 10px 0 0"><label>{{searchMsg}}</label>   </p>
 <table>
   <thead>
   <tr style="background-color: #795548; color: white">
@@ -17,7 +21,12 @@
         <span *ngIf="!titleSortTriger && titleSortTriger != null">⇩ </span>Title
       </a>
     </th>
-    <th style="width: 20%; border: 1px solid">Rating</th>
+    <th style="width: 20%; border: 1px solid">
+      <a (click)="sortByRating()" class="pointer">
+        <span *ngIf="ratingSortTriger">⇧</span>
+        <span *ngIf="!ratingSortTriger && titleSortTriger != null">⇩ </span>Rating
+      </a>
+    </th>
     <th style="width: 20%; border: 1px solid">
       <a (click)="sortByStatus()" class="pointer">
         <span *ngIf="statusSortTriger">⇩</span>
@@ -33,12 +42,15 @@
     <th>{{i+1}}</th>
     <td (click)="open(book)" class="pointer">{{book.author}}</td>
     <td (click)="open(book)" class="pointer">{{book.title}}</td>
-    <td><i *ngFor="let star of [1,2,3]" class="tiny material-icons">grade</i></td>
+    <td>
+      <rating (click)="updateRating(book)" [(ngModel)]="book.rating"
+              [max]="5" [titles]="['one', 'two', 'three', 'four', 'five']">
+      </rating>
     <td>
       <div class="switch">
         <label>
           Off
-          <input [(ngModel)]="book.status" type="checkbox">
+          <input (click)="updateStatus(book)" [(ngModel)]="book.status" type="checkbox">
           <span class="lever"></span>
           On
         </label>

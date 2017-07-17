@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BooksService } from '../../../services/books.service';
 import { Book } from '../../../models/book';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FileUploader } from 'ng2-file-upload';
 
 @Component({
   selector: 'editbook',
@@ -15,8 +16,10 @@ export class EditbookComponent implements OnInit {
 
   statuses : boolean[] = [true,false];
 
-  constructor(private booksService : BooksService,private router: Router,private route : ActivatedRoute) {
+  public uploader:FileUploader = new FileUploader({url:'http://localhost:3000/api/upload'});
 
+  constructor(private booksService : BooksService,private router: Router,private route : ActivatedRoute) {
+    this.uploader.onSuccessItem = this.uploader.onSuccessItem = (item, response) => this.onSuccessItem(item, response);
   }
 
   ngOnInit() {
@@ -34,12 +37,22 @@ export class EditbookComponent implements OnInit {
   }
 
   updateBook(){
+    if (!this.uploader.getNotUploadedItems().length){
     this.booksService.updateBook(this.book)
       .subscribe(responce => {
         if(responce.status == 200){
           this.router.navigate(['/home','bookslist']);
         }
       })
+  } else {
+      this.uploader.uploadAll();
+    }
+  }
+
+  onSuccessItem(item, response){
+    response = JSON.parse(response);
+    this.book.url = response.data.filename;
+    this.updateBook();
   }
 
 }

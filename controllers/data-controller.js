@@ -81,4 +81,4 @@ module.exports.updateBook = function (req, res) {
         }
     });
 
-}
+};

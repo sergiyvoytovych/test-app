@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BooksService } from '../../../services/books.service';
 import { Book } from '../../../models/book';
+import {RatingModule} from "ng2-rating";
 
 @Component({
   selector: 'app-books-list',
@@ -10,12 +11,18 @@ import { Book } from '../../../models/book';
 export class BooksListComponent implements OnInit {
 
   books : Book[];
-
+  copybooks : Book[] = [];
+  searchResults: Book[] = [];
   showBook : Book;
+  tosearch: string;
+  searchMsg :string;
+
+
 
   titleSortTriger: boolean ;
   authorSortTriger: boolean;
   statusSortTriger: boolean;
+  ratingSortTriger: boolean;
 
   constructor(private bookService : BooksService) { }
 
@@ -38,6 +45,7 @@ export class BooksListComponent implements OnInit {
     this.bookService.getBooks()
       .subscribe( responce => {
         this.books = responce.json().data;
+        this.copybooks = this.books;
       })
   }
 
@@ -98,10 +106,69 @@ export class BooksListComponent implements OnInit {
     }
   }
 
+  sortByRating(){
+    if (this.ratingSortTriger == false){
+      this.books.sort(byRating).reverse();
+      this.ratingSortTriger = true;
+    } else {
+      this.books.sort(byRating);
+      this.resetTriger();
+      this.ratingSortTriger = false;
+    }
+
+    function byRating(a,b){
+      if (a.rating < b.rating)
+        return -1;
+      if (a.rating > b.rating)
+        return 1;
+      return 0;
+    }
+  }
+
   resetTriger(){
     this.titleSortTriger = null;
     this.authorSortTriger = null;
     this.statusSortTriger = null;
+    this.ratingSortTriger = null;
+  }
+
+  search(){
+    this.searchResults = [];
+    for(var i=0; i<this.copybooks.length; i++) {
+        if(this.copybooks[i].title.toLowerCase().indexOf(this.tosearch.toLowerCase())!=-1 || this.copybooks[i].author.toLowerCase().indexOf(this.tosearch.toLowerCase()) != -1) {
+          this.searchResults.push(this.copybooks[i]);
+        }
+      }
+    if (this.searchResults.length == 0){
+        this.searchMsg = 'Couldn\'t find any results';
+        this.books = this.copybooks;
+    } else {
+      if (this.tosearch == '') {
+        this.searchMsg = '';
+        this.books = this.copybooks;
+      } else {
+        this.searchMsg = 'We found ' + this.searchResults.length + ' results';
+        this.books = this.searchResults;
+      }
+    }
+    }
+
+  updateRating(book){
+    this.bookService.updateBook(book)
+      .subscribe(res => {
+        if(res.ok == false){
+          alert('something wrong' + res);
+        }
+      });
+  }
+
+  updateStatus(book){
+    this.bookService.updateBook(book)
+      .subscribe(res => {
+        if(res.ok == false){
+          alert('something wrong' + res);
+        }
+      });
   }
 
 }

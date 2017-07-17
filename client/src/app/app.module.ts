@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import { HttpModule } from '@angular/http';
+import {RatingModule} from "ng2-rating";
 
 import {routes} from './app.routes'
 
@@ -31,7 +32,8 @@ import { EditbookComponent } from './mainpage/editbook/editbook.component';
     MaterializeModule,
     FormsModule,
     RouterModule.forRoot(routes),
-    HttpModule
+    HttpModule,
+    RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

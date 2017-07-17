@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 import {Observable} from "rxjs/Observable";
 import { FileUploader } from 'ng2-file-upload';
 
-const URL = 'http://localhost:3000/api/uploadbook';
 
 @Component({
   selector: 'addbook',
