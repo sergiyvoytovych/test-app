@@ -50,7 +50,7 @@
       <div class="switch">
         <label>
           Off
-          <input (click)="updateStatus(book)" [(ngModel)]="book.status" type="checkbox">
+          <input  [(ngModel)]="book.status" (click)="updateStatus(book)" type="checkbox">
           <span class="lever"></span>
           On
         </label>

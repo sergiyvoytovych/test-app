@@ -162,6 +162,7 @@ export class BooksListComponent implements OnInit {
   }
 
   updateStatus(book){
+    book.status = !book.status;
     this.bookService.updateBook(book)
       .subscribe(res => {
         if(res.ok == false){
